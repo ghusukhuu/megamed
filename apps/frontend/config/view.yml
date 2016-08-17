@@ -12,7 +12,7 @@ default:
     language:     en
     robots:       index, follow
 
-  stylesheets:    [main.css, style.css, skins/light_blue.css, custom.css]
+  stylesheets:    [main.css, style.css, skins/light_blue.css, custom.css, fonts/fonts.googleapis.com.css, fonts/fonts.googleapis.com.family.css]
 
   javascripts:    []
 
