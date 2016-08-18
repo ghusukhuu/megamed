@@ -9,27 +9,19 @@
                 <!-- ================ -->
                 <div class="header-top-first clearfix">
                     <ul class="social-links clearfix hidden-xs">
+                        <li class="facebook"><a target="_blank" href="https://www.facebook.com/Megafill-1550776941914587/"><i class="fa fa-facebook"></i></a></li>
                         <li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
                         <li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
-                        <li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-                        <li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
                         <li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
-                        <li class="flickr"><a target="_blank" href="http://www.flickr.com"><i class="fa fa-flickr"></i></a></li>
-                        <li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-                        <li class="pinterest"><a target="_blank" href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
                     </ul>
                     <div class="social-links hidden-lg hidden-md hidden-sm">
                         <div class="btn-group dropdown">
                             <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share-alt"></i></button>
                             <ul class="dropdown-menu dropdown-animation">
+                                <li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
                                 <li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
                                 <li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
-                                <li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-                                <li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
                                 <li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
-                                <li class="flickr"><a target="_blank" href="http://www.flickr.com"><i class="fa fa-flickr"></i></a></li>
-                                <li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-                                <li class="pinterest"><a target="_blank" href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -47,12 +39,12 @@
                     <!-- ================ -->
                     <div class="header-top-dropdown">
                         <div class="btn-group dropdown">
-                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i> Search</button>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i> Хайлт</button>
                             <ul class="dropdown-menu dropdown-menu-right dropdown-animation">
                                 <li>
                                     <form role="search" class="search-box">
                                         <div class="form-group has-feedback">
-                                            <input type="text" class="form-control" placeholder="Search">
+                                            <input type="text" class="form-control" placeholder="Хайлтын утга">
                                             <i class="fa fa-search form-control-feedback"></i>
                                         </div>
                                     </form>
@@ -60,7 +52,7 @@
                             </ul>
                         </div>
                         <div class="btn-group dropdown">
-                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Login</button>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Нэвтрэх</button>
                             <ul class="dropdown-menu dropdown-menu-right dropdown-animation">
                                 <li>
                                     <form class="login-form">
@@ -93,7 +85,7 @@
                             </ul>
                         </div>
                         <div class="btn-group dropdown">
-                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i> Cart (8)</button>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i> Сагс (8)</button>
                             <ul class="dropdown-menu dropdown-menu-right dropdown-animation cart">
                                 <li>
                                     <table class="table table-hover">

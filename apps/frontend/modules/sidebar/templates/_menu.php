@@ -54,7 +54,7 @@
                                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                                     <ul class="nav navbar-nav navbar-right">
                                         <li class="dropdown active">
-                                            <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                                            <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Нүүр</a>
                                             <ul class="dropdown-menu">
                                                 <li class="active"><a href="index.html">Home - Default</a></li>
                                                 <li><a href="index-2.html">Home - 2</a></li>
@@ -73,7 +73,19 @@
                                             </ul>
                                         </li>
                                         <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features</a>
+                                            <a href="blog-right-sidebar.html" class="dropdown-toggle" data-toggle="dropdown">Мэдээ</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                                <li><a href="blog-no-sidebar.html">Blog No Sidebars</a></li>
+                                                <li><a href="blog-masonry.html">Blog Masonry</a></li>
+                                                <li><a href="blog-masonry-sidebar.html">Blog Masonry - Sidebar</a></li>
+                                                <li><a href="blog-timeline.html">Blog Timeline</a></li>
+                                                <li><a href="blog-post.html">Blog post</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Бидний тухай</a>
                                             <ul class="dropdown-menu">
                                                 <li class="dropdown">
                                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Email Templates <span class="default-bg badge">v1.1</span></a>
@@ -183,7 +195,7 @@
                                         </li>													
                                         <!-- mega-menu start -->
                                         <li class="dropdown mega-menu">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Бүтээгдэхүүн</a>
                                             <ul class="dropdown-menu">
                                                 <li>
                                                     <div class="row">
@@ -237,7 +249,7 @@
                                         <!-- mega-menu end -->
                                         <!-- mega-menu start -->
                                         <li class="dropdown mega-menu">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components</a>
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Үйлчилгээ</a>
                                             <ul class="dropdown-menu">
                                                 <li>
                                                     <div class="row">
@@ -285,7 +297,7 @@
                                         </li>
                                         <!-- mega-menu end -->
                                         <li class="dropdown">
-                                            <a href="portfolio-3col.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+                                            <a href="portfolio-3col.html" class="dropdown-toggle" data-toggle="dropdown">Холбоо барих</a>
                                             <ul class="dropdown-menu">
                                                 <li class="dropdown">
                                                     <a href="portfolio-3col.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio - Style 1</a>
@@ -326,32 +338,6 @@
                                                 <li><a href="portfolio-item.html">Portfolio single</a></li>
                                                 <li><a href="portfolio-item-2.html">Portfolio single 2</a></li>
                                                 <li><a href="portfolio-item-3.html">Portfolio single 3</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="shop-listing-3col.html" class="dropdown-toggle" data-toggle="dropdown">Shop</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="index-shop.html">Shop - Home <span class="default-bg badge">v1.2</span></a></li>
-                                                <li><a href="shop-listing-3col.html">Shop - 3 Columns</a></li>
-                                                <li><a href="shop-listing-4col.html">Shop - 4 Columns</a></li>
-                                                <li><a href="shop-listing-sidebar.html">Shop - With Sidebar</a></li>
-                                                <li><a href="shop-product.html">Product</a></li>
-                                                <li><a href="shop-cart.html">Shopping Cart</a></li>
-                                                <li><a href="shop-checkout.html">Checkout Page - Step 1</a></li>
-                                                <li><a href="shop-checkout-payment.html">Checkout Page - Step 2</a></li>
-                                                <li><a href="shop-checkout-review.html">Checkout Page - Step 3</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="blog-right-sidebar.html" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                                <li><a href="blog-no-sidebar.html">Blog No Sidebars</a></li>
-                                                <li><a href="blog-masonry.html">Blog Masonry</a></li>
-                                                <li><a href="blog-masonry-sidebar.html">Blog Masonry - Sidebar</a></li>
-                                                <li><a href="blog-timeline.html">Blog Timeline</a></li>
-                                                <li><a href="blog-post.html">Blog post</a></li>
                                             </ul>
                                         </li>
                                     </ul>

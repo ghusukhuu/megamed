@@ -5,10 +5,10 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="call-to-action">
-                    <h1 class="title">iDea Clean and Unique Design</h1>
-                    <p>Sed ut Perspiciatis Unde Omnis Iste Sed ut perspiciatis unde omnis iste natu error sit  voluptatem accusan tium </p>
+                    <h1 class="title">Герман улсын "Megadenta"</h1>
+                    <p>"Megafill" шүдний ломбоны материалыг албан ёсны эрхтэйгээр борлуулж байна.</p>
                     <a class="btn btn-white more" data-toggle="modal" data-target="#myModal">
-                        Read more <i class="pl-10 fa fa-info"></i>
+                        Цааш унших <i class="pl-10 fa fa-info"></i>
                     </a>
 
                     <!-- Modal -->
@@ -36,8 +36,6 @@
                             </div>
                         </div>
                     </div>
-                    or
-                    <a href="page-contact.html" class="btn btn-default contact">Contact us <i class="pl-10 fa fa-phone"></i></a>
                 </div>
             </div>
         </div>
