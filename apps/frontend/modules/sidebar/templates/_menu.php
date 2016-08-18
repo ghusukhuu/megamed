@@ -195,7 +195,7 @@
                                         </li>													
                                         <!-- mega-menu start -->
                                         <li class="dropdown mega-menu">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Бүтээгдэхүүн</a>
+                                            <a href="/product" class="dropdown-toggle" data-toggle="dropdown">Бүтээгдэхүүн</a>
                                             <ul class="dropdown-menu">
                                                 <li>
                                                     <div class="row">
@@ -210,34 +210,34 @@
                                                                 <div class="col-sm-4">
                                                                     <div class="divider"></div>
                                                                     <ul class="menu">
-                                                                        <li><a href="page-about.html"><i class="icon-right-open"></i>About Us</a></li>
-                                                                        <li><a href="page-about-2.html"><i class="icon-right-open"></i>About Us 2</a></li>
-                                                                        <li><a href="page-about-3.html"><i class="icon-right-open"></i>About Us 3</a></li>
-                                                                        <li><a href="page-about-me.html"><i class="icon-right-open"></i>About Me</a></li>
-                                                                        <li><a href="page-team.html"><i class="icon-right-open"></i>Our Team - Options</a></li>
-                                                                        <li><a href="page-services.html"><i class="icon-right-open"></i>Services</a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>About Us</a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>About Us 2</a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>About Us 3</a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>About Me</a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>Our Team - Options</a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>Services</a></li>
                                                                     </ul>
                                                                 </div>
                                                                 <div class="col-sm-4">
                                                                     <div class="divider"></div>
                                                                     <ul class="menu">
-                                                                        <li><a href="page-contact.html"><i class="icon-right-open"></i>Contact</a></li>
-                                                                        <li><a href="page-contact-2.html"><i class="icon-right-open"></i>Contact 2</a></li>
-                                                                        <li><a href="page-coming-soon.html"><i class="icon-right-open"></i>Coming Soon Page</a></li>
-                                                                        <li><a href="page-404.html"><i class="icon-right-open"></i>404 error</a></li>
-                                                                        <li><a href="page-faq.html"><i class="icon-right-open"></i>FAQ page</a></li>
-                                                                        <li><a href="page-affix-sidebar.html"><i class="icon-right-open"></i>Sidebar - Affix Menu</a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>Contact</a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>Contact 2</a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>Coming Soon Page</a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>404 error</a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>FAQ page</a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>Sidebar - Affix Menu</a></li>
                                                                     </ul>
                                                                 </div>
                                                                 <div class="col-sm-4">
                                                                     <div class="divider"></div>
                                                                     <ul class="menu">
-                                                                        <li><a href="page-left-sidebar.html"><i class="icon-right-open"></i>Left Sidebar</a></li>
-                                                                        <li><a href="page-right-sidebar.html"><i class="icon-right-open"></i>Right Sidebar</a></li>
-                                                                        <li><a href="page-two-sidebars.html"><i class="icon-right-open"></i>Two Sidebars</a></li>
-                                                                        <li><a href="page-no-sidebar.html"><i class="icon-right-open"></i>No Sidebars</a></li>
-                                                                        <li><a href="page-sitemap.html"><i class="icon-right-open"></i>Sitemap</a></li>
-                                                                        <li><a href="page-invoice.html"><i class="icon-right-open"></i>Invoice <span class="badge">v1.1</span></a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>Left Sidebar</a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>Right Sidebar</a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>Two Sidebars</a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>No Sidebars</a></li>
+                                                                        <li><a href="/product"><i class="icon-right-open"></i>Sitemap</a></li>
+                                                                        <li><a href="/"><i class="icon-right-open"></i>Invoice <span class="badge">v1.1</span></a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>

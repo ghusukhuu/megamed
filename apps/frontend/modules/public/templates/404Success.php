@@ -26,7 +26,7 @@
             <div class="main col-md-6 col-md-offset-3">
                 <h1 class="title">Хуудас олдсонгүй - 404</h1>
                 <br>
-                <p>Таны хандсан хаяг манай веб дээр олдсонгүй эсвэл устгагдсан байна! <a href="index.html">үндсэн хуудас руу буцах.</a></p>
+                <p>Таны хандсан хаяг манай веб дээр олдсонгүй эсвэл устгагдсан байна! <a href="/">үндсэн хуудас руу буцах.</a></p>
                 <form role="search">
                     <div class="form-group has-feedback">
                         <input type="text" class="form-control" placeholder="Хайх">

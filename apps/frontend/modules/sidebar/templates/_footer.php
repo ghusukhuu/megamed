@@ -30,7 +30,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <a href="page-about.html" class="link"><span>Read More</span></a>
+                        <a href="page-about.html" class="link"><span>Цааш унших</span></a>
                     </div>
                 </div>
                 <div class="space-bottom hidden-lg hidden-xs"></div>
@@ -55,7 +55,7 @@
                             <div class="gallery-item col-xs-4">
                                 <div class="overlay-container">
                                     <img src="/images/products/p1.png" alt="">
-                                    <a href="/" class="overlay small">
+                                    <a href="/product" class="overlay small">
                                         <i class="fa fa-link"></i>
                                     </a>
                                 </div>
@@ -63,7 +63,7 @@
                             <div class="gallery-item col-xs-4">
                                 <div class="overlay-container">
                                     <img src="/images/products/p2.jpg" alt="">
-                                    <a href="/" class="overlay small">
+                                    <a href="/product" class="overlay small">
                                         <i class="fa fa-link"></i>
                                     </a>
                                 </div>
@@ -71,7 +71,7 @@
                             <div class="gallery-item col-xs-4">
                                 <div class="overlay-container">
                                     <img src="/images/products/p3.png" alt="">
-                                    <a href="/" class="overlay small">
+                                    <a href="/product" class="overlay small">
                                         <i class="fa fa-link"></i>
                                     </a>
                                 </div>
@@ -79,7 +79,7 @@
                             <div class="gallery-item col-xs-4">
                                 <div class="overlay-container">
                                     <img src="/images/products/p4.jpg" alt="">
-                                    <a href="/" class="overlay small">
+                                    <a href="/product" class="overlay small">
                                         <i class="fa fa-link"></i>
                                     </a>
                                 </div>
@@ -87,7 +87,7 @@
                             <div class="gallery-item col-xs-4">
                                 <div class="overlay-container">
                                     <img src="/images/products/p15.png" alt="">
-                                    <a href="/" class="overlay small">
+                                    <a href="/product" class="overlay small">
                                         <i class="fa fa-link"></i>
                                     </a>
                                 </div>
@@ -95,7 +95,7 @@
                             <div class="gallery-item col-xs-4">
                                 <div class="overlay-container">
                                     <img src="/images/products/p6.png" alt="">
-                                    <a href="/" class="overlay small">
+                                    <a href="/product" class="overlay small">
                                         <i class="fa fa-link"></i>
                                     </a>
                                 </div>
@@ -103,7 +103,7 @@
                             <div class="gallery-item col-xs-4">
                                 <div class="overlay-container">
                                     <img src="/images/products/p7.png" alt="">
-                                    <a href="/" class="overlay small">
+                                    <a href="/product" class="overlay small">
                                         <i class="fa fa-link"></i>
                                     </a>
                                 </div>
@@ -111,7 +111,7 @@
                             <div class="gallery-item col-xs-4">
                                 <div class="overlay-container">
                                     <img src="/images/products/p8.png" alt="">
-                                    <a href="/" class="overlay small">
+                                    <a href="/product" class="overlay small">
                                         <i class="fa fa-link"></i>
                                     </a>
                                 </div>
@@ -119,7 +119,7 @@
                             <div class="gallery-item col-xs-4">
                                 <div class="overlay-container">
                                     <img src="/images/products/p9.jpg" alt="">
-                                    <a href="/" class="overlay small">
+                                    <a href="/product" class="overlay small">
                                         <i class="fa fa-link"></i>
                                     </a>
                                 </div>
