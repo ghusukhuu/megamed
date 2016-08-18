@@ -13,7 +13,7 @@
 
                     <!-- logo -->
                     <div class="logo">
-                        <a href="index.html"><img id="logo" src="images/logo_dark_header_light_blue.png" alt="iDea"></a>
+                        <a href="/"><img id="logo" src="images/logo_dark_header_light_blue.png" alt="iDea"></a>
                     </div>
 
                     <!-- name-and-slogan -->
@@ -54,9 +54,9 @@
                                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                                     <ul class="nav navbar-nav navbar-right">
                                         <li class="dropdown active">
-                                            <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Нүүр</a>
+                                            <a href="/" class="dropdown-toggle" data-toggle="dropdown">Нүүр</a>
                                             <ul class="dropdown-menu">
-                                                <li class="active"><a href="index.html">Home - Default</a></li>
+                                                <li class="active"><a href="/">Home - Default</a></li>
                                                 <li><a href="index-2.html">Home - 2</a></li>
                                                 <li><a href="index-3.html">Home - 3</a></li>
                                                 <li><a href="index-4.html">Home - 4</a></li>
