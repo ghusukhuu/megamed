@@ -1,6 +1,6 @@
-<?php #include_partial('homepage/banner') ?>
+<?php include_partial('homepage/banner') ?>
 
-<?php include_partial('homepage/pageTop') ?>
+<?php #include_partial('homepage/pageTop') ?>
 
 <?php include_partial('homepage/features') ?>
 

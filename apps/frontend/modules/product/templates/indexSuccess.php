@@ -6,6 +6,7 @@
             <div class="col-md-12">
                 <ol class="breadcrumb">
                     <li><i class="fa fa-home pr-10"></i><a href="/">Нүүр</a></li>
+                    <li><i class="fa fa-gg pr-10"></i><a href="/product">Бүтээгдэхүүн</a></li>
                     <li class="active">Megafill MH</li>
                 </ol>
             </div>
@@ -161,7 +162,7 @@
                                                         <div class="comment-meta"> <i class="fa fa-star text-default"></i> <i class="fa fa-star text-default"></i> <i class="fa fa-star text-default"></i> <i class="fa fa-star text-default"></i> <i class="fa fa-star"></i> | Today, 12:31</div>
                                                         <div class="comment-body clearfix">
                                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
-                                                            <a href="blog-post.html" class="btn btn-gray more pull-right"><i class="fa fa-reply"></i> Reply</a>
+                                                            <a href="blog-post.html" class="btn btn-gray more pull-right"><i class="fa fa-reply"></i> Хариу бичих</a>
                                                         </div>
                                                     </div>
 
@@ -178,7 +179,7 @@
                                                         <div class="comment-meta"> <i class="fa fa-star text-default"></i> <i class="fa fa-star text-default"></i> <i class="fa fa-star text-default"></i> <i class="fa fa-star text-default"></i> <i class="fa fa-star text-default"></i> | Oct 15</div>
                                                         <div class="comment-body">
                                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
-                                                            <a href="blog-post.html" class="btn btn-gray more pull-right"><i class="fa fa-reply"></i> Reply</a>
+                                                            <a href="blog-post.html" class="btn btn-gray more pull-right"><i class="fa fa-reply"></i> Хариу бичих</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -194,7 +195,7 @@
                                                         <div class="comment-meta"> <i class="fa fa-star text-default"></i> <i class="fa fa-star text-default"></i> <i class="fa fa-star text-default"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> | Sep 25</div>
                                                         <div class="comment-body">
                                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
-                                                            <a href="blog-post.html" class="btn btn-gray more pull-right"><i class="fa fa-reply"></i> Reply</a>
+                                                            <a href="blog-post.html" class="btn btn-gray more pull-right"><i class="fa fa-reply"></i> Хариу бичих</a>
                                                         </div>
                                                     </div>
                                                 </div>
