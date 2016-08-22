@@ -13,13 +13,13 @@
 
                     <!-- logo -->
                     <div class="logo">
-                        <a href="/"><img id="logo" src="/images/logo88.jpg" alt="MegaMed"></a>
+                        <a href="/"><img id="logo" src="/images/logo_light_blue.png" alt="MegaMed"></a>
                     </div>
 
                     <!-- name-and-slogan -->
-                    <!--<div class="site-slogan">
+                    <div class="site-slogan">
                         Medical & Dental, Equipment Sales
-                    </div>-->
+                    </div>
 
                 </div>
                 <!-- header-left end -->
@@ -58,7 +58,7 @@
                                         </li>
 
                                         <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Бүтээгдэхүүн</a>
+                                            <a href="product" class="dropdown-toggle" data-toggle="dropdown">Бүтээгдэхүүн</a>
                                             <ul class="dropdown-menu">
                                                 <li class="dropdown">
                                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Шүд</a>
@@ -92,7 +92,7 @@
                                         </li>
                                         <!-- mega-menu start -->
                                         <li class="dropdown mega-menu">
-                                            <a href="/product" class="dropdown-toggle" data-toggle="dropdown">Мэдээ</a>
+                                            <a href="/news" class="dropdown-toggle" data-toggle="dropdown">Мэдээ</a>
                                             <ul class="dropdown-menu">
                                                 <li>
                                                     <div class="row">
@@ -102,39 +102,26 @@
                                                             <img src="/images/products/p3.png" alt="MegaMed">
                                                         </div>
                                                         <div class="col-lg-8 col-md-9">
-                                                            <h4>Pages</h4>
+                                                            <h4>Мэдээний жагсаалт</h4>
                                                             <div class="row">
-                                                                <div class="col-sm-4">
+                                                                <div class="col-sm-6">
                                                                     <div class="divider"></div>
                                                                     <ul class="menu">
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>About Us</a></li>
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>About Us 2</a></li>
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>About Us 3</a></li>
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>About Me</a></li>
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>Our Team - Options</a></li>
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>Services</a></li>
+                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 1</a></li>
+                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 2</a></li>
+                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 3</a></li>
+                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 4</a></li>
+                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 5</a></li>
                                                                     </ul>
                                                                 </div>
-                                                                <div class="col-sm-4">
+                                                                <div class="col-sm-6">
                                                                     <div class="divider"></div>
                                                                     <ul class="menu">
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>Contact</a></li>
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>Contact 2</a></li>
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>Coming Soon Page</a></li>
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>404 error</a></li>
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>FAQ page</a></li>
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>Sidebar - Affix Menu</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <div class="divider"></div>
-                                                                    <ul class="menu">
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>Left Sidebar</a></li>
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>Right Sidebar</a></li>
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>Two Sidebars</a></li>
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>No Sidebars</a></li>
-                                                                        <li><a href="/product"><i class="icon-right-open"></i>Sitemap</a></li>
-                                                                        <li><a href="/"><i class="icon-right-open"></i>Invoice <span class="badge">v1.1</span></a></li>
+                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 1</a></li>
+                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 2</a></li>
+                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 3</a></li>
+                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 4</a></li>
+                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 5</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
