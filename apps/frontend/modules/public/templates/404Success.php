@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                 <ol class="breadcrumb">
-                    <li><i class="fa fa-home pr-10"></i><a href="index.html">Нүүр</a></li>
+                    <li><i class="fa fa-home pr-10"></i><a href="/">Нүүр</a></li>
                     <li class="active">Алдаа 404</li>
                 </ol>
             </div>

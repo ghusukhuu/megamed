@@ -53,7 +53,7 @@
                                 <div class="col-md-6">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
                                     <p>Quo expedita tempore modi minima at adipisci saepe excepturi alias consequuntur sunt asperiores enim ut assumenda hic vitae, odio deleniti illo, veniam quas!</p>
-                                    <a href="page-services.html" class="btn btn-default">Read more</a>
+                                    <a href="/service" class="btn btn-default">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +75,7 @@
                                 <div class="col-md-6">
                                     <p>Dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
                                     <p>Expedita tempore modi minima at adipisci saepe excepturi alias consequuntur sunt asperiores enim ut assumenda hic vitae, odio deleniti illo, veniam quas!</p>
-                                    <a href="page-services.html" class="btn btn-default">Read more</a>
+                                    <a href="/service" class="btn btn-default">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +97,7 @@
                                 <div class="col-md-6">
                                     <p>Ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
                                     <p>Tempore modi minima at adipisci saepe excepturi alias consequuntur sunt asperiores enim ut assumenda hic vitae, odio deleniti illo, veniam quas!</p>
-                                    <a href="page-services.html" class="btn btn-default">Read more</a>
+                                    <a href="/service" class="btn btn-default">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +119,7 @@
                                 <div class="col-md-6">
                                     <p>Sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
                                     <p>Modi minima at adipisci saepe excepturi alias consequuntur sunt asperiores enim ut assumenda hic vitae, odio deleniti illo, veniam quas!</p>
-                                    <a href="page-services.html" class="btn btn-default">Read more</a>
+                                    <a href="/service" class="btn btn-default">Read more</a>
                                 </div>
                             </div>
                         </div>

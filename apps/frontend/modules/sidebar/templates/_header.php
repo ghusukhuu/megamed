@@ -11,7 +11,6 @@
                     <ul class="social-links clearfix hidden-xs">
                         <li class="facebook"><a target="_blank" href="https://www.facebook.com/Megafill-1550776941914587/"><i class="fa fa-facebook"></i></a></li>
                         <li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-                        <li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
                         <li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
                     </ul>
                     <div class="social-links hidden-lg hidden-md hidden-sm">
@@ -20,7 +19,6 @@
                             <ul class="dropdown-menu dropdown-animation">
                                 <li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
                                 <li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-                                <li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
                                 <li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
                             </ul>
                         </div>
@@ -112,8 +110,8 @@
                                         </tbody>
                                     </table>
                                     <div class="panel-body text-right">	
-                                        <a href="shop-cart.html" class="btn btn-group btn-default btn-sm">Үзэх</a>
-                                        <a href="shop-checkout.html" class="btn btn-group btn-default btn-sm">Шалгах</a>
+                                        <a href="/product" class="btn btn-group btn-default btn-sm">Үзэх</a>
+                                        <a href="/product" class="btn btn-group btn-default btn-sm">Шалгах</a>
                                     </div>
                                 </li>
                             </ul>

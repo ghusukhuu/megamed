@@ -17,7 +17,6 @@
                                 <ul class="social-links circle">
                                     <li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
                                     <li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-                                    <li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
                                     <li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
                                 </ul>
                             </div>
@@ -45,7 +44,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>Copyright © 2016 MegaMed by <a target="_blank" href="http://megamed.mn">MegaMed</a>. All Rights Reserved</p>
+                    <p><a href="http://megamed.mn">MegaMed</a> © 2016. Зохиогчийн эрх хуулиар хамгаалагдсан.</p>
                 </div>
                 <div class="col-md-6">
                     <nav class="navbar navbar-default" role="navigation">

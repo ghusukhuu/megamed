@@ -14,7 +14,7 @@
                                 <i class="fa fa-laptop"></i>
                                 <h2>Мэдээ мэдээлэл</h2>
                                 <p>Iure sequi unde hic. Sapiente quaerat labore sequi inventore veritatis cumque.</p>
-                                <a href="page-services.html" class="btn-default btn">Цааш унших</a>
+                                <a href="/service" class="btn-default btn">Цааш унших</a>
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -22,7 +22,7 @@
                                 <i class="fa fa-sitemap"></i>
                                 <h2>Хямдрал</h2>
                                 <p>Inventore dolores aut laboriosam cum consequuntur delectus sequi! Eum est.</p>
-                                <a href="page-services.html" class="btn-default btn">Цааш унших</a>
+                                <a href="/service" class="btn-default btn">Цааш унших</a>
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -30,7 +30,7 @@
                                 <i class="fa fa-leaf"></i>
                                 <h2>Үнэгүй хүргэлт</h2>
                                 <p>Inventore dolores aut laboriosam cum consequuntur delectus sequi! Eum est.</p>
-                                <a href="page-services.html" class="btn-default btn">Цааш унших</a>
+                                <a href="/service" class="btn-default btn">Цааш унших</a>
                             </div>
                         </div>
                     </div>

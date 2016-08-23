@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
         <!-- Mobile Meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <?php include_http_metas() ?>
         <?php include_metas() ?>
         <?php include_title() ?>
@@ -31,6 +31,36 @@
 
         <?php include_stylesheets() ?>
         <?php include_javascripts() ?>
+
+        <!-- Google Analytics -->
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-82807299-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <script type="application/ld+json">
+            {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "http://www.megamed.mn//",
+            "potentialAction": {
+            "@type": "SearchAction",
+            "target": "http://www.megamed.mn/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+            }
+            }
+        </script>
     </head>
     <body>
         <!-- scrollToTop -->

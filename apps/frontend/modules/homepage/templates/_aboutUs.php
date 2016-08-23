@@ -20,7 +20,7 @@
                             </div>
                         </div>
                         <p>Esse sequi veniam, assumenda voluptate necessitatibus ipsa dicta vero, minima natus cum cupiditate magnam et placeat quo adipisci.</p>
-                        <a href="page-about.html" class="btn btn-white">Learn More</a>
+                        <a href="/about" class="btn btn-white">Learn More</a>
                         <div class="space hidden-md hidden-lg"></div>
                     </div>
                     <div class="col-md-6">
