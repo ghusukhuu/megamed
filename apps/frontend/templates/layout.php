@@ -53,7 +53,7 @@
             {
             "@context": "http://schema.org",
             "@type": "WebSite",
-            "url": "http://www.megamed.mn//",
+            "url": "http://www.megamed.mn/",
             "potentialAction": {
             "@type": "SearchAction",
             "target": "http://www.megamed.mn/search?q={search_term_string}",

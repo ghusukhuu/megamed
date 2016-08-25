@@ -12,8 +12,8 @@
                 <div class="header-left clearfix">
 
                     <!-- logo -->
-                    <div class="logo">
-                        <a href="/"><img id="logo" src="/images/logo_light_blue.png" alt="MegaMed"></a>
+                    <div class="logo-dis">
+                        <a href="/"><img id="logo" src="/images/megamed.png" alt="MegaMed"></a>
                     </div>
 
                     <!-- name-and-slogan -->

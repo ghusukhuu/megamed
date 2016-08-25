@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="footer-content">
-                        <div class="logo-footer"><img id="logo-footer" src="images/logo_red_footer.png" alt=""></div>
+                        <div class="logo-footer">MegaMed LLC</div>
                         <div class="row">
                             <div class="col-sm-9">
                                 <p>Герман улсын "Megadenta" компанийн "Megafill" шүдний ломбоны материалыг албан ёсны эрхтэйгээр борлуулж байна.
