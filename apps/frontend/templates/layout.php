@@ -11,23 +11,23 @@
         <?php include_title() ?>
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="images/favicon.ico"/>
+        <link rel="shortcut icon" href="/images/favicon.ico"/>
 
         <!-- Bootstrap core CSS -->
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+        <link href="/bootstrap/css/bootstrap.css" rel="stylesheet"/>
 
         <!-- Font Awesome CSS -->
-        <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+        <link href="/fonts/font-awesome/css/font-awesome.css" rel="stylesheet"/>
 
         <!-- Fontello CSS -->
-        <link href="fonts/fontello/css/fontello.css" rel="stylesheet"/>
+        <link href="/fonts/fontello/css/fontello.css" rel="stylesheet"/>
 
         <!-- Plugins -->
-        <link href="plugins/rs-plugin/css/settings.css" media="screen" rel="stylesheet"/>
-        <link href="plugins/rs-plugin/css/extralayers.css" media="screen" rel="stylesheet"/>
-        <link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet"/>
-        <link href="css/animations.css" rel="stylesheet"/>
-        <link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet"/>
+        <link href="/plugins/rs-plugin/css/settings.css" media="screen" rel="stylesheet"/>
+        <link href="/plugins/rs-plugin/css/extralayers.css" media="screen" rel="stylesheet"/>
+        <link href="/plugins/magnific-popup/magnific-popup.css" rel="stylesheet"/>
+        <link href="/css/animations.css" rel="stylesheet"/>
+        <link href="/plugins/owl-carousel/owl.carousel.css" rel="stylesheet"/>
 
         <?php include_stylesheets() ?>
         <?php include_javascripts() ?>
@@ -82,45 +82,45 @@
 
         <!-- JavaScript files placed at the end of the document so the pages load faster ================================================== -->
         <!-- Jquery and Bootstap core js files -->
-        <script type="text/javascript" src="plugins/jquery.min.js"></script>
-        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/plugins/jquery.min.js"></script>
+        <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
 
         <!-- Modernizr javascript -->
-        <script type="text/javascript" src="plugins/modernizr.js"></script>
+        <script type="text/javascript" src="/plugins/modernizr.js"></script>
 
         <!-- jQuery REVOLUTION Slider  -->
-        <script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-        <script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+        <script type="text/javascript" src="/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
         <!-- Isotope javascript -->
-        <script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="/plugins/isotope/isotope.pkgd.min.js"></script>
 
         <!-- Owl carousel javascript -->
-        <script type="text/javascript" src="plugins/owl-carousel/owl.carousel.js"></script>
+        <script type="text/javascript" src="/plugins/owl-carousel/owl.carousel.js"></script>
 
         <!-- Magnific Popup javascript -->
-        <script type="text/javascript" src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 
         <!-- Appear javascript -->
-        <script type="text/javascript" src="plugins/jquery.appear.js"></script>
+        <script type="text/javascript" src="/plugins/jquery.appear.js"></script>
 
         <!-- Count To javascript -->
-        <script type="text/javascript" src="plugins/jquery.countTo.js"></script>
+        <script type="text/javascript" src="/plugins/jquery.countTo.js"></script>
 
         <!-- Parallax javascript -->
-        <script src="plugins/jquery.parallax-1.1.3.js"></script>
+        <script src="/plugins/jquery.parallax-1.1.3.js"></script>
 
         <!-- Contact form -->
-        <script src="plugins/jquery.validate.js"></script>
+        <script src="/plugins/jquery.validate.js"></script>
 
         <!-- SmoothScroll javascript -->
-        <script type="text/javascript" src="plugins/jquery.browser.js"></script>
-        <script type="text/javascript" src="plugins/SmoothScroll.js"></script>
+        <script type="text/javascript" src="/plugins/jquery.browser.js"></script>
+        <script type="text/javascript" src="/plugins/SmoothScroll.js"></script>
 
         <!-- Initialization of Plugins -->
-        <script type="text/javascript" src="js/template.js"></script>
+        <script type="text/javascript" src="/js/template.js"></script>
 
         <!-- Custom Scripts -->
-        <script type="text/javascript" src="js/custom.js"></script>
+        <script type="text/javascript" src="/js/custom.js"></script>
     </body>
 </html>

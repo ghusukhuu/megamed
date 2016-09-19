@@ -58,36 +58,36 @@
                                         </li>
 
                                         <li class="dropdown">
-                                            <a href="product" class="dropdown-toggle" data-toggle="dropdown">Бүтээгдэхүүн</a>
+                                            <a href="/product" class="dropdown-toggle" data-toggle="dropdown">Бүтээгдэхүүн</a>
                                             <ul class="dropdown-menu">
                                                 <li class="dropdown">
-                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Шүд</a>
+                                                    <a href="/product" class="dropdown-toggle" data-toggle="dropdown">Шүд</a>
                                                     <ul class="dropdown-menu">
-                                                        <li><a href="#">Нүүр амны эмчилгээ</a></li>
-                                                        <li><a href="#">Нүүр амны согог, гажиг засал</a></li>
-                                                        <li><a href="#">Нүүр амны мэс засал</a></li>
-                                                        <li><a href="#">Шүдний эмнэлэгийн тоног, төхөөрөмж</a></li>
-                                                        <li><a href="#">Шүд цайруулах</a></li>
-                                                        <li><a href="#">Шүдний сойз, утас, ам зайлах уусмал</a></li>
-                                                        <li><a href="#">Шүдний эмнэлэгийн нэг удаагийн хэрэгсэл</a></li>
-                                                        <li><a href="#">Бусад</a></li>
+                                                        <li><a href="/product">Нүүр амны эмчилгээ</a></li>
+                                                        <li><a href="/product">Нүүр амны согог, гажиг засал</a></li>
+                                                        <li><a href="/product">Нүүр амны мэс засал</a></li>
+                                                        <li><a href="/product">Шүдний эмнэлэгийн тоног, төхөөрөмж</a></li>
+                                                        <li><a href="/product">Шүд цайруулах</a></li>
+                                                        <li><a href="/product">Шүдний сойз, утас, ам зайлах уусмал</a></li>
+                                                        <li><a href="/product">Шүдний эмнэлэгийн нэг удаагийн хэрэгсэл</a></li>
+                                                        <li><a href="/product">Бусад</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="dropdown">
-                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Арьс гоо засал</a>
+                                                    <a href="/product" class="dropdown-toggle" data-toggle="dropdown">Арьс гоо засал</a>
                                                     <ul class="dropdown-menu">
-                                                        <li><a href="#">Филлер</a></li>
-                                                        <li><a href="#">Коллагентай утас</a></li>
-                                                        <li><a href="#">PRP</a></li>
-                                                        <li><a href="#">Лазер тоног төхөөрөмж</a></li>
-                                                        <li><a href="#">Мэргэжлийн гоо сайхны бүтээгдэхүүн</a></li>
-                                                        <li><a href="#">Бусад</a></li>
+                                                        <li><a href="/product">Филлер</a></li>
+                                                        <li><a href="/product">Коллагентай утас</a></li>
+                                                        <li><a href="/product">PRP</a></li>
+                                                        <li><a href="/product">Лазер тоног төхөөрөмж</a></li>
+                                                        <li><a href="/product">Мэргэжлийн гоо сайхны бүтээгдэхүүн</a></li>
+                                                        <li><a href="/product">Бусад</a></li>
                                                     </ul>
                                                 </li>												
-                                                <li><a href="#">Лабортори</a></li>
-                                                <li><a href="#">Эмэгтэйчүүд</a></li>
-                                                <li><a href="#">Эмнэлэгийн нэг удаагийн хэрэгсэл</a></li>
-                                                <li><a href="#">Эмч, эмнэлэгийн ажилчдын хувцас</a></li>
+                                                <li><a href="/product">Лабортори</a></li>
+                                                <li><a href="/product">Эмэгтэйчүүд</a></li>
+                                                <li><a href="/product">Эмнэлэгийн нэг удаагийн хэрэгсэл</a></li>
+                                                <li><a href="/product">Эмч, эмнэлэгийн ажилчдын хувцас</a></li>
                                             </ul>
                                         </li>
                                         <!-- mega-menu start -->

@@ -21,4 +21,9 @@ class productActions extends sfActions
         
     }
 
+    public function executeDetail(sfWebRequest $request)
+    {
+        
+    }
+
 }

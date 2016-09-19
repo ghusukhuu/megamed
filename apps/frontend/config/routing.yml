@@ -2,6 +2,30 @@
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
 # default rules
+contact:
+  url:   /contact
+  param: { module: contact, action: index }
+
+about:
+  url:   /about
+  param: { module: about, action: index }
+
+news:
+  url:   /news
+  param: { module: news, action: index }
+
+news:
+  url:   /news
+  param: { module: news, action: index }
+
+product_detail:
+  url:   /product-detail/:name
+  param: { module: product, action: detail }
+
+product:
+  url:   /product
+  param: { module: product, action: index }
+
 homepage:
   url:   /
   param: { module: homepage, action: index }
