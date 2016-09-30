@@ -11,6 +11,9 @@ Options +FollowSymLinks +ExecCGI
   #RewriteCond %{REQUEST_URI} \..+$
   #RewriteCond %{REQUEST_URI} !\.html$
   #RewriteRule .* - [L]
+  
+  RewriteCond %{REQUEST_URI} ^/admin/?
+  RewriteRule ^(.*)$ admin.php [QSA,L]
 
   # we check if the .html version is here (caching)
   RewriteRule ^$ index.html [QSA]

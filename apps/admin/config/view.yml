@@ -1,0 +1,20 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        MegaMed | Admin
+    description:  MegaMed
+    keywords:     megamed, dental
+    language:     en
+    robots:       index, follow
+
+  stylesheets:    [main.css, style.css, skins/light_blue.css, custom.css, fonts/fonts.googleapis.com.css, fonts/fonts.googleapis.com.family.css]
+
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layout
