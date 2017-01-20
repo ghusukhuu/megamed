@@ -72,7 +72,9 @@
         <div class="page-wrapper">
             <?php include_partial('sidebar/menu') ?>
 
-            <?php echo $sf_content ?>
+            <div class="container-fluid">
+                <?php echo $sf_content ?>
+            </div>
 
             <?php include_partial('sidebar/footer') ?>
         </div>

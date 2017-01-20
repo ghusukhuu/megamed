@@ -1,6 +1,19 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+#product
+product_new:
+  url:   /admin/product-new
+  param: { module: product, action: new }
+
+product_edit:
+  url:   /admin/product-edit
+  param: { module: product, action: edit }
+
+product:
+  url:   /admin/product
+  param: { module: product, action: index }
+
 #login
 login:
   url:   /admin/login

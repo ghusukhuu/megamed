@@ -20,9 +20,15 @@ class ProductTable extends Doctrine_Table
 
     public static function getList()
     {
-        return self::getInstance()
-                        ->createQuery()
-                        ->fetchArray();
+        $sql = 'SELECT c.`name` AS category_name, p.*
+                FROM product p
+                LEFT JOIN category c ON c.id = p.category_id
+                WHERE p.is_active = 1';
+
+        $pdo = AppEntity::getConnection();
+        $rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+
+        return $rows;
     }
 
 }

@@ -62,6 +62,11 @@ class AppEntity
         return $errors;
     }
 
+    public static function yesOrNo($val)
+    {
+        return $val == 1 ? 'Тийм' : 'Үгүй';
+    }
+
 }
 
 ?>

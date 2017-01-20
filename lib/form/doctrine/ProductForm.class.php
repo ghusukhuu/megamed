@@ -10,7 +10,48 @@
  */
 class ProductForm extends BaseProductForm
 {
-  public function configure()
-  {
-  }
+
+    public function configure()
+    {
+        $options = array(1 => 'Идэвхитэй', 2 => 'Идэвхигүй');
+
+        $this->setWidgets(array(
+            'id' => new sfWidgetFormInputHidden(),
+            'category_id' => new sfWidgetFormDoctrineChoice(array('label' => 'Ангилал:', 'model' => $this->getRelatedModelName('Category'), 'add_empty' => false), array('class' => 'form-control')),
+            'name' => new sfWidgetFormInputText(array('label' => 'Нэр:'), array('class' => 'form-control')),
+            'intro' => new sfWidgetFormTextarea(array('label' => 'Товч:'), array('class' => 'form-control')),
+            'descr' => new sfWidgetFormTextarea(array('label' => 'Тайлбар:'), array('class' => 'form-control')),
+            'price' => new sfWidgetFormInputText(array('label' => 'Үнэ:'), array('class' => 'form-control')),
+            'photo' => new sfWidgetFormInputFile(array('label' => 'Зураг')),
+            'is_active' => new sfWidgetFormSelect(array('choices' => $options, 'label' => 'Төлөв:'), array('class' => 'form-control')),
+        ));
+
+        $this->setValidators(array(
+            'id' => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
+            'category_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Category'))),
+            'name' => new sfValidatorString(array('max_length' => 150)),
+            'intro' => new sfValidatorString(array('max_length' => 455)),
+            'descr' => new sfValidatorString(),
+            'price' => new sfValidatorNumber(),
+            'photo' => new sfValidatorFile(
+                    array(
+                'required' => false,
+                'max_size' => 5242880,
+                'path' => sfConfig::get('sf_web_dir') . '/images/products/megamed/',
+                'mime_types' => array(
+                    'image/jpeg',
+                    'image/pjpeg',
+                    'image/png',
+                    'image/x-png',
+                    'image/gif',
+                )), array(
+                'required' => 'Та зураг оруулна уу',
+                'max_size' => 'Таны оруулсан зурагны хэмжээ иx байна. Хамгийн иxдээ 5MB.',
+                'mime_types' => 'Та зөвxөн зурган файл оруулаx боломжтой')),
+            'is_active' => new sfValidatorInteger(array('required' => false)),
+        ));
+
+        $this->widgetSchema->setNameFormat('product[%s]');
+    }
+
 }
