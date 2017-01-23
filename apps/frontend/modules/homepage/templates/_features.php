@@ -11,7 +11,7 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="box-style-1 white-bg object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200">
-                                <i class="fa fa-laptop"></i>
+                                <img src="images/newspaper-128.gif"/>
                                 <h2>Мэдээ мэдээлэл</h2>
                                 <p></p>
                                 <a href="/news" class="btn-default btn">Цааш унших</a>
@@ -19,7 +19,7 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="box-style-1 white-bg object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="400">
-                                <i class="fa fa-sitemap"></i>
+                                <img src="images/sale.jpg"/>
                                 <h2>Хямдрал</h2>
                                 <p></p>
                                 <a href="/sale" class="btn-default btn">Цааш унших</a>
@@ -27,7 +27,7 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="box-style-1 white-bg object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="400">
-                                <i class="fa fa-leaf"></i>
+                                <img src="images/delivery-128.gif"/>
                                 <h2>Үнэгүй хүргэлт</h2>
                                 <p></p>
                                 <a href="/trade" class="btn-default btn">Цааш унших</a>

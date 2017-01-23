@@ -10,6 +10,10 @@ File Description: Place here your custom CSS styles
 */
 
 .slideshow {
-    height: 380px;
+    height: 350px;
     overflow: hidden;
+}
+
+.box-style-1 img {
+    display: initial;
 }
