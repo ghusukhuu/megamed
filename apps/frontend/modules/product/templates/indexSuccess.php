@@ -38,7 +38,7 @@
                         <div class="col-lg-4 col-sm-6 masonry-grid-item">
                             <div class="listing-item">
                                 <div class="overlay-container">
-                                    <img src="/images/products/megamed/thumbs/<?php echo $product['photo'] ?>" alt="" height="300px;">
+                                    <img src="/images/products/megamed/thumbs/<?php echo $product['photo'] ?>" alt="" style="min-height: 300px;">
                                     <a href="<?php echo url_for('@product_detail?name=' . $product['name']) ?>" class="overlay small">
                                         <i class="fa fa-plus"></i>
                                         <span>Дэлгэрэнгүй үзэх</span>

@@ -13,7 +13,7 @@
                             <div class="box-style-1 white-bg object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200">
                                 <i class="fa fa-laptop"></i>
                                 <h2>Мэдээ мэдээлэл</h2>
-                                <p>Iure sequi unde hic. Sapiente quaerat labore sequi inventore veritatis cumque.</p>
+                                <p></p>
                                 <a href="/news" class="btn-default btn">Цааш унших</a>
                             </div>
                         </div>
@@ -21,7 +21,7 @@
                             <div class="box-style-1 white-bg object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="400">
                                 <i class="fa fa-sitemap"></i>
                                 <h2>Хямдрал</h2>
-                                <p>Inventore dolores aut laboriosam cum consequuntur delectus sequi! Eum est.</p>
+                                <p></p>
                                 <a href="/sale" class="btn-default btn">Цааш унших</a>
                             </div>
                         </div>
@@ -29,7 +29,7 @@
                             <div class="box-style-1 white-bg object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="400">
                                 <i class="fa fa-leaf"></i>
                                 <h2>Үнэгүй хүргэлт</h2>
-                                <p>Inventore dolores aut laboriosam cum consequuntur delectus sequi! Eum est.</p>
+                                <p></p>
                                 <a href="/trade" class="btn-default btn">Цааш унших</a>
                             </div>
                         </div>

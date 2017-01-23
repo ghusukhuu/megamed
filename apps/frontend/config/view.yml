@@ -6,7 +6,7 @@ default:
     content-type: text/html
 
   metas:
-    title:        MegaMed | Home
+    title:        Мегамед ХХК
     description:  MegaMed
     keywords:     megamed, dental
     language:     en
