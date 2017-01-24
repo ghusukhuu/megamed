@@ -69,7 +69,7 @@
 			$('.slider-banner-container .slider-banner').show().revolution({
 				delay:10000,
 				startwidth:1140,
-				startheight:520,
+				startheight:380,
 
 				navigationArrows:"solo",
 
@@ -118,7 +118,7 @@
 			$('.slider-banner-container .slider-banner-2').show().revolution({
 				delay:10000,
 				startwidth:1140,
-				startheight:520,
+				startheight:380,
 
 				navigationArrows:"solo",
 
@@ -167,7 +167,7 @@
 			$('.slider-banner-container .slider-banner-3').show().revolution({
 				delay:10000,
 				startwidth:1140,
-				startheight:520,
+				startheight:380,
 				dottedOverlay: "twoxtwo",
 
 				parallax:"mouse",
@@ -222,7 +222,7 @@
 				$('.slider-banner-container .slider-banner-fullscreen').show().revolution({
 					delay:10000,
 					startwidth:1140,
-					startheight:520,
+					startheight:380,
 					fullWidth:"off",
 					fullScreen:"on",
 					fullScreenOffsetContainer: "",
@@ -274,7 +274,7 @@
 				$('.slider-banner-container .slider-banner-fullscreen').show().revolution({
 					delay:10000,
 					startwidth:1140,
-					startheight:520,
+					startheight:380,
 					fullWidth:"off",
 					fullScreen:"on",
 					fullScreenOffsetContainer: "",
@@ -328,7 +328,7 @@
 				$('.slider-banner-container .slider-banner-fullscreen-alt-nav').show().revolution({
 					delay:10000,
 					startwidth:1140,
-					startheight:520,
+					startheight:380,
 					fullWidth:"off",
 					fullScreen:"on",
 					fullScreenOffsetContainer: "",
@@ -380,7 +380,7 @@
 				$('.slider-banner-container .slider-banner-fullscreen-alt-nav').show().revolution({
 					delay:10000,
 					startwidth:1140,
-					startheight:520,
+					startheight:380,
 					fullWidth:"off",
 					fullScreen:"on",
 					fullScreenOffsetContainer: "",
