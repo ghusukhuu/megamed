@@ -24,3 +24,17 @@ File Description: Place here your custom CSS styles
     color: #000;
     margin-bottom: 15px;
 }
+
+.news .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.news .content {
+    margin-bottom: 20px;
+}
+
+.news .subtitle {
+    font-weight: bold;
+}
