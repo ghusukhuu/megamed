@@ -1797,17 +1797,26 @@ tbody {
 	position: relative;
 	overflow: hidden;
 }
+.listing-item img {
+    height: 280px;
+    overflow: hidden;
+}
 .listing-item-body {
 	padding: 20px 15px 15px;
 	-webkit-transition: ease-in-out all 0.25s;
 	-o-transition: ease-in-out all 0.25s;
 	transition: ease-in-out all 0.25s;
 }
+.listing-item-body p {
+    height: 40px;
+    overflow: hidden;
+}
 .listing-item:hover .listing-item-body {
 	background-color: #fafafa;
 }
 .listing-item h3 {
-	font-size: 18px;
+	font-size: 16px;
+        height: 40px;
 }
 .listing-item p {
 	color: #999999;
@@ -1833,9 +1842,8 @@ tbody {
 	padding-right: 0;
 }
 .price {
-	font-size: 22px;
+	font-size: 16px;
 	color: #000;
-	font-weight: 300;
 }
 .wishlist:hover i:before {
 	content: "\f004";
