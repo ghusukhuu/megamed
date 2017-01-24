@@ -20,7 +20,7 @@
                         <!-- LAYER NR. 2 -->
                         <div class="tp-caption dark_gray_bg sfl medium tp-resizeme"
                              data-x="0"
-                             data-y="100" 
+                             data-y="70" 
                              data-speed="600"
                              data-start="1600"
                              data-end="94000"
@@ -30,7 +30,7 @@
                         <!-- LAYER NR. 3 -->
                         <div class="tp-caption light_gray_bg sfb medium tp-resizeme"
                              data-x="50"
-                             data-y="100" 
+                             data-y="70" 
                              data-speed="600"
                              data-start="1600"
                              data-end="94000"
@@ -40,7 +40,7 @@
                         <!-- LAYER NR. 4 -->
                         <div class="tp-caption dark_gray_bg sfl medium tp-resizeme"
                              data-x="0"
-                             data-y="170" 
+                             data-y="140" 
                              data-speed="600"
                              data-start="1800"
                              data-end="94000"
@@ -50,7 +50,7 @@
                         <!-- LAYER NR. 5 -->
                         <div class="tp-caption light_gray_bg sfb medium tp-resizeme"
                              data-x="50"
-                             data-y="170" 
+                             data-y="140" 
                              data-speed="600"
                              data-start="1800"
                              data-end="94000"
@@ -60,7 +60,7 @@
                         <!-- LAYER NR. 6 -->
                         <div class="tp-caption dark_gray_bg sfl medium tp-resizeme"
                              data-x="0"
-                             data-y="240" 
+                             data-y="210" 
                              data-speed="600"
                              data-start="2000"
                              data-end="94000"
@@ -70,7 +70,7 @@
                         <!-- LAYER NR. 7 -->
                         <div class="tp-caption light_gray_bg sfb medium tp-resizeme"
                              data-x="50"
-                             data-y="240" 
+                             data-y="210" 
                              data-speed="600"
                              data-start="2000"
                              data-end="94000"
@@ -80,7 +80,7 @@
                         <!-- LAYER NR. 8 -->
                         <div class="tp-caption dark_gray_bg sfl medium tp-resizeme"
                              data-x="0"
-                             data-y="310" 
+                             data-y="280" 
                              data-speed="600"
                              data-start="2200"
                              data-end="94000"
@@ -90,7 +90,7 @@
                         <!-- LAYER NR. 9 -->
                         <div class="tp-caption light_gray_bg sfb medium tp-resizeme"
                              data-x="50"
-                             data-y="310" 
+                             data-y="280" 
                              data-speed="600"
                              data-start="2200"
                              data-end="94000"
