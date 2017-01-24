@@ -15,35 +15,9 @@
                     <!-- ================ -->
                     <div class="header-top-dropdown">
                         <div class="btn-group dropdown">
-                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Нэвтрэх</button>
-                            <ul class="dropdown-menu dropdown-menu-right dropdown-animation">
-                                <li>
-                                    <form class="login-form">
-                                        <div class="form-group has-feedback">
-                                            <label class="control-label">Хэрэглэгчийн нэр</label>
-                                            <input type="text" class="form-control" placeholder="">
-                                            <i class="fa fa-user form-control-feedback"></i>
-                                        </div>
-                                        <div class="form-group has-feedback">
-                                            <label class="control-label">Нууц үг</label>
-                                            <input type="password" class="form-control" placeholder="">
-                                            <i class="fa fa-lock form-control-feedback"></i>
-                                        </div>
-                                        <button type="submit" class="btn btn-group btn-dark btn-sm">Нэвтрэх</button>
-                                        <span>&nbsp;</span>
-                                        <button type="submit" class="btn btn-group btn-default btn-sm">Бүртгүүлэх</button>
-
-                                        <ul>
-                                            <li><a href="#">Нууц үг сэргээх</a></li>
-                                        </ul>
-                                        <div class="divider"></div>
-                                        <span class="text-center">Нэвтрэх</span>
-                                        <ul class="social-links clearfix">
-                                            <li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-                                        </ul>
-                                    </form>
-                                </li>
-                            </ul>
+                            <button type="button" class="btn dropdown-toggle">
+                                <i class="fa fa-facebook"></i> Нэвтрэх
+                            </button>
                         </div>
                         <div class="btn-group dropdown">
                             <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i> Сагс (2)</button>

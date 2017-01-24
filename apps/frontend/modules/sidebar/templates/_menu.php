@@ -56,77 +56,18 @@
                                         <li class="dropdown">
                                             <a href="/product" class="dropdown-toggle" data-toggle="dropdown">Бүтээгдэхүүн</a>
                                             <ul class="dropdown-menu">
-                                                <li class="dropdown">
-                                                    <a href="/product" class="dropdown-toggle" data-toggle="dropdown">Шүд</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="/product">Нүүр амны эмчилгээ</a></li>
-                                                        <li><a href="/product">Нүүр амны согог, гажиг засал</a></li>
-                                                        <li><a href="/product">Нүүр амны мэс засал</a></li>
-                                                        <li><a href="/product">Шүдний эмнэлэгийн тоног, төхөөрөмж</a></li>
-                                                        <li><a href="/product">Шүд цайруулах</a></li>
-                                                        <li><a href="/product">Шүдний сойз, утас, ам зайлах уусмал</a></li>
-                                                        <li><a href="/product">Шүдний эмнэлэгийн нэг удаагийн хэрэгсэл</a></li>
-                                                        <li><a href="/product">Бусад</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a href="/product" class="dropdown-toggle" data-toggle="dropdown">Арьс гоо засал</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="/product">Филлер</a></li>
-                                                        <li><a href="/product">Коллагентай утас</a></li>
-                                                        <li><a href="/product">PRP</a></li>
-                                                        <li><a href="/product">Лазер тоног төхөөрөмж</a></li>
-                                                        <li><a href="/product">Мэргэжлийн гоо сайхны бүтээгдэхүүн</a></li>
-                                                        <li><a href="/product">Бусад</a></li>
-                                                    </ul>
-                                                </li>												
+                                                <li><a href="/product">Шүд</a></li>
+                                                <li><a href="/product">Арьс гоо засал</a></li>												
                                                 <li><a href="/product">Лабортори</a></li>
                                                 <li><a href="/product">Эмэгтэйчүүд</a></li>
                                                 <li><a href="/product">Эмнэлэгийн нэг удаагийн хэрэгсэл</a></li>
                                                 <li><a href="/product">Эмч, эмнэлэгийн ажилчдын хувцас</a></li>
+                                                <li><a href="/product">Бусад</a></li>
                                             </ul>
                                         </li>
-                                        <!-- mega-menu start -->
-                                        <li class="dropdown mega-menu">
-                                            <a href="/news" class="dropdown-toggle" data-toggle="dropdown">Мэдээ</a>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <div class="row">
-                                                        <div class="col-lg-4 col-md-3 hidden-sm">
-                                                            <h4>Онцлох мэдээ</h4>
-                                                            <p>Намрын урамшуулал зарлалаа</p>
-                                                            <img src="/images/products/p3.png" alt="MegaMed">
-                                                        </div>
-                                                        <div class="col-lg-8 col-md-9">
-                                                            <h4>Мэдээний жагсаалт</h4>
-                                                            <div class="row">
-                                                                <div class="col-sm-6">
-                                                                    <div class="divider"></div>
-                                                                    <ul class="menu">
-                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 1</a></li>
-                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 2</a></li>
-                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 3</a></li>
-                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 4</a></li>
-                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 5</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="divider"></div>
-                                                                    <ul class="menu">
-                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 1</a></li>
-                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 2</a></li>
-                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 3</a></li>
-                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 4</a></li>
-                                                                        <li><a href="/news"><i class="icon-right-open"></i>Мэдээ 5</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
+                                        <li>
+                                            <a href="/news">Мэдээ</a>
                                         </li>
-                                        <!-- mega-menu end -->
                                         <li>
                                             <a href="/about">Бидний тухай</a>
                                         </li>

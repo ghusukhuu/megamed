@@ -23,9 +23,8 @@
 
             <!-- page-title start -->
             <!-- ================ -->
-            <h1 class="page-title">Бидний тухай</h1>
-            <div class="separator-2"></div>
-            <!-- page-title end -->
+            <br/>
+            <div class="page-title-custom">Бидний тухай</div>
 
             <div class="row">
                 <div class="col-md-12">
@@ -48,7 +47,7 @@
                         санал болгож байна.
                     </p>
 
-                    <h4>Бидэнтэй хамтран ажилласнаар</h4>
+                    <div class="page-title-custom">Бидэнтэй хамтран ажилласнаар</div>
 
                     <p class="text-justify">
 
