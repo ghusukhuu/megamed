@@ -36,7 +36,7 @@
                             <li><i class="fa fa-envelope pr-10"></i><a href="mailto:sales@megamed.mn">sales@megamed.mn</a></li>
                         </ul>
                         <ul class="social-links colored circle large">
-                            <li class="facebook"><a target="_blank" href="https://www.facebook.com/Megafill-1550776941914587/"><i class="fa fa-facebook"></i></a></li>
+                            <li class="facebook"><a target="_blank" href="https://www.facebook.com/1550776941914587"><i class="fa fa-facebook"></i></a></li>
                         </ul>
                     </div>
                 </div>
