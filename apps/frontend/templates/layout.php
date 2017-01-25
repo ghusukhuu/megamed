@@ -31,6 +31,8 @@
         <?php include_stylesheets() ?>
         <?php include_javascripts() ?>
 
+        <script type="text/javascript" src="/plugins/jquery.min.js"></script>
+
         <?php if ($_SERVER['REMOTE_ADDR'] != '127.0.0.1'): ?>
             <!-- Google Analytics -->
             <script>
@@ -84,7 +86,6 @@
 
         <!-- JavaScript files placed at the end of the document so the pages load faster ================================================== -->
         <!-- Jquery and Bootstap core js files -->
-        <script type="text/javascript" src="/plugins/jquery.min.js"></script>
         <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
 
         <!-- Modernizr javascript -->

@@ -50,7 +50,7 @@ if ($facebook) {
                             </ul>
                         </div>
                         <div class="btn-group dropdown">
-                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i> Сагс (2)</button>
+                            <button type="button" class="btn dropdown-toggle cart_anchor" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i> Сагс (2)</button>
                             <ul class="dropdown-menu dropdown-menu-right dropdown-animation cart">
                                 <li>
                                     <table class="table table-hover">

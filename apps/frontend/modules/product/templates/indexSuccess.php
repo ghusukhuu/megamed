@@ -24,7 +24,7 @@
                 <!-- shop items start -->
                 <div class="masonry-grid-fitrows row grid-space-20">
                     <?php foreach ($products as $product): ?>
-                        <div class="col-sm-3 masonry-grid-item">
+                        <div class="col-lg-3 col-sm-6 masonry-grid-item">
                             <div class="listing-item">
                                 <div class="overlay-container">
                                     <img src="/images/products/megamed/thumbs/<?php echo $product['photo'] ?>" alt="">
@@ -45,7 +45,7 @@
                                         ₮<?php echo number_format($product['price'], 0, '.', ','); ?>
                                     </span>
                                     <div class="elements-list pull-right">
-                                        <a href="#"><i class="fa fa-shopping-cart pr-10"></i>Нэмэх</a>
+                                        <a href="#" class="add-to-cart"><i class="fa fa-shopping-cart pr-10"></i>Нэмэх</a>
                                     </div>
                                 </div>
                             </div>
@@ -60,8 +60,6 @@
                 <ul class="pagination">
                     <li><a href="#">«</a></li>
                     <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
                     <li><a href="#">»</a></li>
                 </ul>
                 <!-- pagination end -->
@@ -74,3 +72,18 @@
 
 </section>
 <!-- main-container end -->
+
+<script type="text/javascript" src="/js/codex-fly.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.add-to-cart').on('click', function () {
+            //Scroll to top if cart icon is hidden on top
+            $('html, body').animate({
+                'scrollTop': $(".cart_anchor").position().top
+            });
+            //Select item image and pass to the function
+            var itemImg = $(this).parent().parent().parent().find('img').eq(0);
+            flyToElement($(itemImg), $('.cart_anchor'));
+        });
+    });
+</script>
