@@ -18,8 +18,6 @@ class homepageActions extends sfActions
      */
     public function executeIndex(sfWebRequest $request)
     {
-        $this->showLoginUrl = $request->getParameter('showLoginUrl', false);
-
         $this->facebook = new Facebook(array(
             'appId' => sfConfig::get('app_facebook_id'),
             'secret' => sfConfig::get('app_secret_id')

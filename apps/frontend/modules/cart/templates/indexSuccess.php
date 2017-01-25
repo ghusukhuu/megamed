@@ -1,4 +1,4 @@
-<?php if ($items): ?>
+<?php if (count($items)): ?>
     <button type="button" class="btn dropdown-toggle cart_anchor" data-toggle="dropdown">
         <i class="fa fa-shopping-cart"></i> 
         Сагс (<?php echo count($items) ?>)
@@ -35,7 +35,7 @@
                     <?php endforeach; ?>
 
                     <tr>
-                        <td class="total-quantity" colspan="2">Нийт <?php echo $totalCount ?></td>
+                        <td class="total-quantity" colspan="2">Нийт: <?php echo $totalCount ?></td>
                         <td class="total-amount">₮<?php echo AppEntity::numberFormat($totalAmount) ?></td>
                     </tr>
                 </tbody>

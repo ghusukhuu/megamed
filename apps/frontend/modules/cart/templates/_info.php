@@ -14,7 +14,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="total-quantity" colspan="2">Нийт 0</td>
+                    <td class="total-quantity" colspan="2">Нийт: 0</td>
                     <td class="total-amount">₮0</td>
                 </tr>
             </tbody>

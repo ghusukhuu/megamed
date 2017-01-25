@@ -54,7 +54,7 @@ if ($facebook) {
                             <script type="text/javascript">
                                 $(document).ready(function () {
                                     $.ajax({
-                                        url: "<?php echo url_for('@cart_add') ?>",
+                                        url: "<?php echo url_for('@cart') ?>",
                                         data: "id=" + $(this).attr('rel'),
                                         type: "POST",
                                         beforeSend: function () {
