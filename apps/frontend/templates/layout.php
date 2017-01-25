@@ -10,6 +10,8 @@
         <?php include_metas() ?>
         <?php include_title() ?>
 
+        <link rel="icon" href="/images/favicon.ico"/>
+
         <!-- Bootstrap core CSS -->
         <link href="/bootstrap/css/bootstrap.css" rel="stylesheet"/>
 
