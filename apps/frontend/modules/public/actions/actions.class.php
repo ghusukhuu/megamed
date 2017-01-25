@@ -21,7 +21,13 @@ class publicActions extends sfActions
         
     }
 
-    public function execute404($request)
+    public function executeLogout(sfWebRequest $request)
+    {
+        $this->getUser()->signOut();
+        $this->redirect('@homepage');
+    }
+
+    public function execute404(sfWebRequest $request)
     {
         
     }

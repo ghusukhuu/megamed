@@ -147,9 +147,9 @@ ProductDetailType:
       primary: false
       notnull: true
       autoincrement: false
-Users:
+User:
   connection: doctrine
-  tableName: users
+  tableName: user
   columns:
     id:
       type: integer(4)
@@ -157,43 +157,97 @@ Users:
       unsigned: false
       primary: true
       autoincrement: true
+    email:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
     username:
-      type: string(155)
+      type: string(100)
       fixed: false
       unsigned: false
       primary: false
       notnull: true
       autoincrement: false
     password:
-      type: string(255)
+      type: string(100)
       fixed: false
       unsigned: false
       primary: false
       notnull: true
       autoincrement: false
     lastname:
-      type: string(150)
+      type: string(50)
       fixed: false
       unsigned: false
       primary: false
       notnull: false
       autoincrement: false
     firstname:
-      type: string(150)
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    photo:
+      type: string(100)
       fixed: false
       unsigned: false
       primary: false
       notnull: false
       autoincrement: false
-    email:
-      type: string(150)
+    mobile:
+      type: integer(4)
       fixed: false
       unsigned: false
       primary: false
       notnull: false
       autoincrement: false
-    type:
+    total_point:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    used_point:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    is_verify:
       type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    is_system_admin:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '2'
+      notnull: true
+      autoincrement: false
+    status:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: true
+      autoincrement: false
+    user_type_id:
+      type: integer(4)
       fixed: false
       unsigned: false
       primary: false
@@ -207,7 +261,115 @@ Users:
       primary: false
       notnull: false
       autoincrement: false
+    verified_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
     created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+UserFb:
+  connection: doctrine
+  tableName: user_fb
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    first_name:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    gender:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    last_name:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    link:
+      type: string(250)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    locale:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    name:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    timezone:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    updated_time:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    verified:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    photo:
+      type: string(250)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    updated_at:
       type: timestamp(25)
       fixed: false
       unsigned: false
