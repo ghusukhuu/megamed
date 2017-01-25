@@ -5,7 +5,7 @@ $facebook = new Facebook(array(
         ));
 
 if ($facebook) {
-    $params = array('redirect_uri' => 'http://megamed.mn');
+    $params = array('redirect_uri' => 'http://megamed.mn/login');
     $loginUrl = $facebook->getLoginUrl($params);
 }
 ?>

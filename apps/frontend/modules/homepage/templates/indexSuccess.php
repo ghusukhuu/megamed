@@ -1,17 +1,6 @@
-<?php if ($facebook): ?>
-    <?php
-    $params = array('redirect_uri' => 'http://megamed.mn');
-    $loginUrl = $facebook->getLoginUrl($params);
-    ?>
-<?php endif; ?>
-
-<?php if ($showLoginUrl): ?>
-    <a href="<?php echo $loginUrl ?>">login</a>
-<?php endif; ?>
-
 <?php include_partial('homepage/banner') ?>
 
-<?php #include_partial('homepage/pageTop') ?>
+<?php include_partial('homepage/pageTop') ?>
 
 <?php include_partial('homepage/features') ?>
 

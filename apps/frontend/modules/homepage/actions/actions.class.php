@@ -25,7 +25,6 @@ class homepageActions extends sfActions
             'secret' => sfConfig::get('app_secret_id')
         ));
 
-        $this->siteUrl = sfConfig::get('site_url');
         $this->user = $this->facebook->getUser();
 
         if ($this->user) {
