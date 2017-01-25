@@ -1,6 +1,18 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+cart_delete:
+  url:   /cart-delete
+  param: { module: cart, action: delete }
+
+cart_add:
+  url:   /cart-add
+  param: { module: cart, action: add }
+
+cart:
+  url:   /cart
+  param: { module: cart, action: index }
+
 # default rules
 contact:
   url:   /contact

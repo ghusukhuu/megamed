@@ -18,6 +18,14 @@ class ProductTable extends Doctrine_Table
         return Doctrine_Core::getTable('Product');
     }
 
+    public static function getBy($id)
+    {
+        return self::getInstance()
+                        ->createQuery()
+                        ->where('id = ?', $id)
+                        ->fetchOne();
+    }
+
     public static function getList()
     {
         $sql = 'SELECT c.`name` AS category_name, p.*

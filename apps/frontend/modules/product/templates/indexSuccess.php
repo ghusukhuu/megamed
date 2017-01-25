@@ -42,10 +42,10 @@
                                         <?php echo $product['intro'] ?>
                                     </p>
                                     <span class="price">
-                                        ₮<?php echo number_format($product['price'], 0, '.', ','); ?>
+                                        ₮<?php echo AppEntity::numberFormat($product['price']); ?>
                                     </span>
                                     <div class="elements-list pull-right">
-                                        <a href="#" class="add-to-cart"><i class="fa fa-shopping-cart pr-10"></i>Нэмэх</a>
+                                        <a href="javascript:void(0)" class="add-to-cart" rel="<?php echo $product['id'] ?>"><i class="fa fa-shopping-cart pr-10"></i>Нэмэх</a>
                                     </div>
                                 </div>
                             </div>
@@ -77,13 +77,25 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('.add-to-cart').on('click', function () {
-            //Scroll to top if cart icon is hidden on top
-            $('html, body').animate({
-                'scrollTop': $(".cart_anchor").position().top
-            });
             //Select item image and pass to the function
             var itemImg = $(this).parent().parent().parent().find('img').eq(0);
             flyToElement($(itemImg), $('.cart_anchor'));
+
+            $.ajax({
+                url: "<?php echo url_for('@cart_add') ?>",
+                data: "id=" + $(this).attr('rel'),
+                type: "POST",
+                beforeSend: function () {
+                },
+                success: function (data, textStatus, jqXHR) {
+                    //Scroll to top if cart icon is hidden on top
+                    $('html, body').animate({
+                        'scrollTop': $(".cart_anchor").position().top
+                    });
+
+                    $('#cartItems').html(data);
+                }
+            });
         });
     });
 </script>

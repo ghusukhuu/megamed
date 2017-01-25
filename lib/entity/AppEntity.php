@@ -67,6 +67,11 @@ class AppEntity
         return $val == 1 ? 'Тийм' : 'Үгүй';
     }
 
+    public static function numberFormat($price)
+    {
+        return number_format($price, 0, '.', ',');
+    }
+
 }
 
 ?>

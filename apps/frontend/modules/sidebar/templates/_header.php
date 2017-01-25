@@ -49,41 +49,22 @@ if ($facebook) {
                                 </li>
                             </ul>
                         </div>
-                        <div class="btn-group dropdown">
-                            <button type="button" class="btn dropdown-toggle cart_anchor" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i> Сагс (2)</button>
-                            <ul class="dropdown-menu dropdown-menu-right dropdown-animation cart">
-                                <li>
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th class="quantity">Тоо</th>
-                                                <th class="product">Бараа</th>
-                                                <th class="amount">Нийт</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="quantity">2 x</td>
-                                                <td class="product"><a href="/product">C - Cement Flow</a><span class="small">Нүүрэвч, циркон бүрээс</span></td>
-                                                <td class="amount">₮160,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="quantity">3 x</td>
-                                                <td class="product"><a href="shop-product.html">Megacem</a><span class="small">Зуурч хэрэглэдэг гласс иономерны цемент</span></td>
-                                                <td class="amount">₮80,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="total-quantity" colspan="2">Нийт 5</td>
-                                                <td class="total-amount">₮560,000</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <div class="panel-body text-right">	
-                                        <a href="/product" class="btn btn-group btn-default btn-sm">Үзэх</a>
-                                        <a href="/product" class="btn btn-group btn-default btn-sm">Шалгах</a>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div id="cartItems" class="btn-group dropdown">
+                            <?php include_partial('cart/info') ?>
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $.ajax({
+                                        url: "<?php echo url_for('@cart_add') ?>",
+                                        data: "id=" + $(this).attr('rel'),
+                                        type: "POST",
+                                        beforeSend: function () {
+                                        },
+                                        success: function (data, textStatus, jqXHR) {
+                                            $('#cartItems').html(data);
+                                        }
+                                    });
+                                });
+                            </script>
                         </div>
 
                     </div>

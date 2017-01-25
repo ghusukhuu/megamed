@@ -127,4 +127,14 @@ class myUser extends sfBasicSecurityUser
         return $this->getAttribute('logout_url', '');
     }
 
+    public function getCartItems()
+    {
+        return $this->getAttribute('cart_items', array());
+    }
+
+    public function setCartItems($cartItems)
+    {
+        $this->setAttribute('cart_items', $cartItems);
+    }
+
 }
