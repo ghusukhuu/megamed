@@ -2,4 +2,7 @@
 # http://www.symfony-project.org/reference/1_4/en/11-App
 
 # default values
-#all:
+all:
+  site_url: http://megamed.mn
+  facebook_id: "902601439842754"
+  secret_id: "e0bcb7a952f886d95b5ce69ac6643be5"    
