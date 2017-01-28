@@ -16,6 +16,7 @@ Doctrine_Manager::getInstance()->bindComponent('Orders', 'doctrine');
  * @property integer $payment_type
  * @property string $ip
  * @property string $agent
+ * @property integer $status
  * @property timestamp $created_at
  * 
  * @method integer   getId()           Returns the current record's "id" value
@@ -27,6 +28,7 @@ Doctrine_Manager::getInstance()->bindComponent('Orders', 'doctrine');
  * @method integer   getPaymentType()  Returns the current record's "payment_type" value
  * @method string    getIp()           Returns the current record's "ip" value
  * @method string    getAgent()        Returns the current record's "agent" value
+ * @method integer   getStatus()       Returns the current record's "status" value
  * @method timestamp getCreatedAt()    Returns the current record's "created_at" value
  * @method Orders    setId()           Sets the current record's "id" value
  * @method Orders    setUserId()       Sets the current record's "user_id" value
@@ -37,6 +39,7 @@ Doctrine_Manager::getInstance()->bindComponent('Orders', 'doctrine');
  * @method Orders    setPaymentType()  Sets the current record's "payment_type" value
  * @method Orders    setIp()           Sets the current record's "ip" value
  * @method Orders    setAgent()        Sets the current record's "agent" value
+ * @method Orders    setStatus()       Sets the current record's "status" value
  * @method Orders    setCreatedAt()    Sets the current record's "created_at" value
  * 
  * @package    megamed
@@ -128,6 +131,16 @@ abstract class BaseOrders extends sfDoctrineRecord
              'notnull' => true,
              'autoincrement' => false,
              'length' => 1000,
+             ));
+        $this->hasColumn('status', 'integer', 4, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'default' => '1',
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 4,
              ));
         $this->hasColumn('created_at', 'timestamp', 25, array(
              'type' => 'timestamp',

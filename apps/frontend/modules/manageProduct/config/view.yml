@@ -1,0 +1,7 @@
+newSuccess:
+  stylesheets:    []
+  javascripts:    [ckeditor/ckeditor.js, ckfinder/ckfinder.js]
+
+editSuccess:
+  stylesheets:    []
+  javascripts:    [ckeditor/ckeditor.js, ckfinder/ckfinder.js]

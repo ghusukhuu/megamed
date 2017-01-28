@@ -27,8 +27,8 @@
                         <div class="col-lg-3 col-sm-6 masonry-grid-item">
                             <div class="listing-item">
                                 <div class="overlay-container">
-                                    <img src="/images/products/megamed/thumbs/<?php echo $product['photo'] ?>" alt="">
-                                    <a href="<?php echo url_for('@product_detail?name=' . $product['name']) ?>" class="overlay small">
+                                    <img src="/images/products/megamed/<?php echo $product['photo'] ?>" alt="">
+                                    <a href="<?php echo url_for('@product_detail?id=' . $product['id']) ?>" class="overlay small">
                                         <i class="fa fa-plus"></i>
                                         <span>Дэлгэрэнгүй үзэх</span>
                                     </a>
@@ -36,7 +36,7 @@
 
                                 <div class="listing-item-body clearfix">
                                     <h3 class="title">
-                                        <a href="<?php echo url_for('@product_detail?name=' . $product['name']) ?>"><?php echo $product['name'] ?></a>
+                                        <a href="<?php echo url_for('@product_detail?id=' . $product['id']) ?>"><?php echo $product['name'] ?></a>
                                     </h3>
                                     <p>
                                         <?php echo $product['intro'] ?>

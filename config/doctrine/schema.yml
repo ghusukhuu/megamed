@@ -131,6 +131,14 @@ Orders:
       primary: false
       notnull: true
       autoincrement: false
+    status:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: true
+      autoincrement: false
     created_at:
       type: timestamp(25)
       fixed: false
@@ -399,6 +407,30 @@ User:
       unsigned: false
       primary: false
       notnull: false
+      autoincrement: false
+UserCredentials:
+  connection: doctrine
+  tableName: user_credentials
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    credential:
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
       autoincrement: false
 UserFb:
   connection: doctrine

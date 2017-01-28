@@ -21,15 +21,16 @@ class myUser extends sfBasicSecurityUser
 
     public function setPermissions()
     {
-        
+        $rows = UserCredentialsTable::getBy($this->getId());
+        foreach ($rows as $row) {
+            $this->addCredential($row->getCredential());
+        }
     }
 
     public function setLastLogin($user)
     {
-        if ($this->getUserType() == 1) {
-            $user->setLastLogin(AppEntity::getOgnoo());
-            $user->save();
-        }
+        $user->setLastLogin(AppEntity::getOgnoo());
+        $user->save();
     }
 
     public function signOut()

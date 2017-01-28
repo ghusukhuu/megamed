@@ -1,6 +1,42 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+order_update:
+  url:   /order-update
+  param: { module: orders, action: update }
+
+order_products:
+  url:   /order-products
+  param: { module: orders, action: products }
+
+orders:
+  url:   /orders
+  param: { module: orders, action: index }
+
+manage_product_delete:
+  url:   /manage-product-delete
+  param: { module: manageProduct, action: delete }
+
+manage_product_update:
+  url:   /manage-product-update
+  param: { module: manageProduct, action: update }
+
+manage_product_create:
+  url:   /manage-product-create
+  param: { module: manageProduct, action: create }
+
+manage_product_new:
+  url:   /manage-product-new
+  param: { module: manageProduct, action: new }
+
+manage_product_edit:
+  url:   /manage-product-edit
+  param: { module: manageProduct, action: edit }
+
+manage_product:
+  url:   /manage-product
+  param: { module: manageProduct, action: index }
+
 cart_check_complete:
   url:   /cart-check-complete
   param: { module: cart, action: complete }
@@ -43,7 +79,7 @@ news:
   param: { module: news, action: index }
 
 product_detail:
-  url:   /product-detail/:name
+  url:   /product-detail/:id
   param: { module: product, action: detail }
 
 product:

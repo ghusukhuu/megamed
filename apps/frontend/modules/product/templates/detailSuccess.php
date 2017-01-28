@@ -113,7 +113,6 @@
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs" role="tablist">
                                         <li class="active"><a href="#h2tab1" role="tab" data-toggle="tab"><i class="fa fa-file-text-o pr-5"></i>Тайлбар</a></li>
-                                        <li><a href="#h2tab2" role="tab" data-toggle="tab"><i class="fa fa-files-o pr-5"></i>Нэмэлт</a></li>
                                     </ul>
                                     <!-- Tab panes -->
                                     <div class="tab-content padding-top-clear padding-bottom-clear">
@@ -125,28 +124,6 @@
                                                 Өнгөлгөө сайн авна, шүлсэнд уусахгүй, зажлалтын даралт даах чанар өндөр.<br/> 
                                                 Гоо сайхныг сэргээхэд өндөр үр дүнтэй.
                                             </p>
-                                        </div>
-                                        <div class="tab-pane fade" id="h2tab2">
-                                            <h4 class="space-top">Specifications</h4>
-                                            <hr>
-                                            <dl class="dl-horizontal">
-                                                <dt>Screen</dt>
-                                                <dd>4.95” 1920x1080 display</dd>
-                                                <dt>Cameras</dt>
-                                                <dd>1.3MP front facing, 8MP rear facing with Optical Image Stabilization</dd>
-                                                <dt>Dimensions</dt>
-                                                <dd>69.17 x 137.84 x 8.59 mm (130g)</dd>
-                                                <dt>Battery</dt>
-                                                <dd>2300 mAh. Talk time up to 17 hours*. Standby time up to 300 hours†. Internet use time up to 8.5 hours on Wi-Fi, up to 7 hours on LTE‡. Wireless Charging built-in</dd>
-                                                <dt>Audio</dt>
-                                                <dd>Built-in speaker 3.5mm stereo audio connector</dd>
-                                                <dt>Processing</dt>
-                                                <dd>CPU: Qualcomm Snapdragon™ 800, 2.26GHz processor</dd>
-                                                <dd>GPU: Adreno 330, 450MHz</dd>
-                                                <dt>Wireless</dt>
-                                                <dd>Dual-band Wi-Fi (2.4G/5G) 802.11 a/b/g/n/ac</dd>
-                                            </dl>
-                                            <hr>
                                         </div>
                                     </div>
                                 </div>

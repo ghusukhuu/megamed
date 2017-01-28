@@ -7,6 +7,7 @@
  */
 class OrderProductsTable extends Doctrine_Table
 {
+
     /**
      * Returns an instance of this class.
      *
@@ -16,4 +17,17 @@ class OrderProductsTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('OrderProducts');
     }
+
+    public static function getList($orderId)
+    {
+        $sql = 'SELECT p.name, op.quantity, op.price, op.amount
+                FROM `order_products` as op
+                INNER JOIN product as p ON p.id = op.product_id
+                WHERE order_id = ' . (int) $orderId;
+
+        $pdo = Doctrine_Manager::connection()->getDbh();
+        $rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+        return $rows;
+    }
+
 }

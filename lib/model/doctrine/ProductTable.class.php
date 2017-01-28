@@ -31,7 +31,7 @@ class ProductTable extends Doctrine_Table
         $sql = 'SELECT c.`name` AS category_name, p.*
                 FROM product p
                 LEFT JOIN category c ON c.id = p.category_id
-                WHERE p.is_active = 1';
+                WHERE 1';
 
         $pdo = AppEntity::getConnection();
         $rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);

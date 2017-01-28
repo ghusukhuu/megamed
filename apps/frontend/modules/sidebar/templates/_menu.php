@@ -74,6 +74,16 @@
                                         <li>
                                             <a href="/contact">Холбоо барих</a>
                                         </li>
+                                        <?php if ($sf_user->hasCredential('admin')): ?>
+                                            <li class="dropdown">
+                                                <a href="/product" class="dropdown-toggle" data-toggle="dropdown">Удирдлага</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="<?php echo url_for('@orders') ?>">Захиалгууд</a></li>
+                                                    <li><a href="<?php echo url_for('@manage_product') ?>">Бүтээгдэхүүн</a></li>
+                                                    <li><a href="<?php echo url_for('@manage_product_new') ?>">Бүтээгдэхүүн нэмэх</a></li>
+                                                </ul>
+                                            </li>
+                                        <?php endif; ?>
                                     </ul>
                                 </div>
 

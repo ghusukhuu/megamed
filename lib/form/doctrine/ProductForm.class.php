@@ -51,6 +51,13 @@ class ProductForm extends BaseProductForm
             'is_active' => new sfValidatorInteger(array('required' => false)),
         ));
 
+        $this->widgetSchema['photo'] = new sfWidgetFormInputFileEditable(array(
+            'label' => 'Зураг',
+            'file_src' => sfConfig::get('sf_web_dir') . '/images/products/megamed/' . $this->getObject()->getPhoto(),
+            'is_image' => true,
+            'edit_mode' => !$this->isNew(),
+                ), array('width' => 500));
+
         $this->widgetSchema->setNameFormat('product[%s]');
     }
 
