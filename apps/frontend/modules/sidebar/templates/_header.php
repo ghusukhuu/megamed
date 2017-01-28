@@ -38,11 +38,10 @@ if ($facebook) {
                             <ul class="dropdown-menu dropdown-menu-right dropdown-animation">
                                 <li>
                                     <?php if ($sf_user->isAuthenticated()): ?>
+                                        <a href="#">
+                                            <i class="fa fa-list"></i> Миний захиалгууд
+                                        </a>
                                         <a href="<?php echo $sf_user->getAttribute('logout', '/logout') ?>">
-                                            <a href="<?php echo $loginUrl ?>">
-                                                <i class="fa fa-list"></i> Миний захиалгууд
-                                            </a>
-                                            <div class="divider"></div>
                                             <i class="fa fa-sign-out"></i> Гарах
                                         </a>
                                     <?php else: ?>

@@ -17,6 +17,7 @@ class MailEntity
         $ccEmails = array('dairiimaa11@gmail.com', 'm.usukhbayar@gmail.com');
 
         $message = Swift_Message::newInstance()
+                ->setContentType('text/html')
                 ->setFrom(self::FROM_EMAIL)
                 ->setTo($email)
                 ->setBcc($ccEmails)

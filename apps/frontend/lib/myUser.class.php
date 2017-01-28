@@ -23,7 +23,7 @@ class myUser extends sfBasicSecurityUser
     {
         $rows = UserCredentialsTable::getBy($this->getId());
         foreach ($rows as $row) {
-            $this->addCredential($row->getCredential());
+            $this->addCredential($row['credential']);
         }
     }
 

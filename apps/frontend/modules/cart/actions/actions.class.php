@@ -92,11 +92,13 @@ class cartActions extends sfActions
 
                     $body = 'Хүндэт борлуулалтын баг';
                     $body .= '<br/>';
+                    $body .= '<br/>';
                     $body .= 'Шинэ захиалга ирлээ.';
                     $body .= '<br/>';
-                    $body .= 'Барааны тоо: ' . $totalCount . ', Мөнгөн дүн: ' . $totalAmount;
+                    $body .= 'Барааны тоо: ' . $totalCount . ', Мөнгөн дүн: ' . AppEntity::numberFormat($totalAmount);
                     $body .= '<br/>';
                     $body .= 'Веб хуудас руу орон шалгана уу.';
+                    $body .= '<br/>';
                     $body .= '<br/>';
                     $body .= 'Хүндэтгэн ёслосон http://megamed.mn';
 
