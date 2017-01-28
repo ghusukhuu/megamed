@@ -78,6 +78,8 @@
 
             <?php include_partial('sidebar/menu') ?>
 
+            <?php include_partial('sidebar/flash') ?>
+
             <?php echo $sf_content ?>
 
             <?php include_partial('sidebar/footer') ?>
@@ -125,8 +127,5 @@
 
         <!-- Custom Scripts -->
         <script type="text/javascript" src="/js/custom.js"></script>
-
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBZFF0kbLbH9WbBQHizu3j5_s5GYy6Kgdc"></script>
-        <script type="text/javascript" src="/js/google.map.config.js"></script>
     </body>
 </html>

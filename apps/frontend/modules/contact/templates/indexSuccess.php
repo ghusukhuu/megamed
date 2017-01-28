@@ -45,4 +45,7 @@
 
         </div>
     </div>
-</div>
+</section>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBZFF0kbLbH9WbBQHizu3j5_s5GYy6Kgdc"></script>
+<script type="text/javascript" src="/js/google.map.config.js"></script>

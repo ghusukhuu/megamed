@@ -1,6 +1,18 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+cart_check_complete:
+  url:   /cart-check-complete
+  param: { module: cart, action: complete }
+
+cart_check:
+  url:   /cart-check
+  param: { module: cart, action: check }
+
+cart_view:
+  url:   /cart-view
+  param: { module: cart, action: view }
+
 cart_delete:
   url:   /cart-delete
   param: { module: cart, action: delete }

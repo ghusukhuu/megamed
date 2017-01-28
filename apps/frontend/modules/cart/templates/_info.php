@@ -21,8 +21,8 @@
         </table>
 
         <div class="panel-body text-right">	
-            <a href="/product" class="btn btn-group btn-default btn-sm">Шалгах</a>
-            <a href="/product" class="btn btn-group btn-default btn-sm">Тооцоо хийх</a>
+            <a href="<?php echo url_for('@cart_view') ?>" class="btn btn-group btn-default btn-sm">Шалгах</a>
+            <a href="<?php echo url_for('@cart_check') ?>" class="btn btn-group btn-default btn-sm">Тооцоо хийх</a>
         </div>
     </li>
 </ul>

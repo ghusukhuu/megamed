@@ -28,7 +28,7 @@
 
                             <tr>
                                 <td class="quantity"><?php echo $count ?> x</td>
-                                <td class="product"><a href="/product/<?php $id ?>"><?php echo $product->getName() ?></a><span class="small"><?php echo $product->getIntro() ?></span></td>
+                                <td class="product"><a href="/product/<?php echo $id ?>"><?php echo $product->getName() ?></a><span class="small"><?php echo $product->getIntro() ?></span></td>
                                 <td class="amount">₮<?php echo AppEntity::numberFormat($count * $product->getPrice()) ?></td>
                             </tr>
                         <?php endif; ?>
@@ -42,8 +42,8 @@
             </table>
 
             <div class="panel-body text-right">	
-                <a href="/product" class="btn btn-group btn-default btn-sm">Шалгах</a>
-                <a href="/product" class="btn btn-group btn-default btn-sm">Тооцоо хийх</a>
+                <a href="<?php echo url_for('@cart_view') ?>" class="btn btn-group btn-default btn-sm">Шалгах</a>
+                <a href="<?php echo url_for('@cart_check') ?>" class="btn btn-group btn-default btn-sm">Тооцоо хийх</a>
             </div>
         </li>
     </ul>
