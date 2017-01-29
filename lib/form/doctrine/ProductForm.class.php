@@ -37,7 +37,7 @@ class ProductForm extends BaseProductForm
                     array(
                 'required' => false,
                 'max_size' => 5242880,
-                'path' => sfConfig::get('sf_web_dir') . '/images/products/megamed/',
+                'path' => sfConfig::get('sf_root_dir') . '/' . AppConstant::DIR_PRODUCT . '/images/products/megamed/',
                 'mime_types' => array(
                     'image/jpeg',
                     'image/pjpeg',
@@ -53,7 +53,7 @@ class ProductForm extends BaseProductForm
 
         $this->widgetSchema['photo'] = new sfWidgetFormInputFileEditable(array(
             'label' => 'Зураг',
-            'file_src' => sfConfig::get('sf_web_dir') . '/images/products/megamed/' . $this->getObject()->getPhoto(),
+            'file_src' => sfConfig::get('sf_root_dir') . '/' . AppConstant::DIR_PRODUCT . '/images/products/megamed/' . $this->getObject()->getPhoto(),
             'is_image' => true,
             'edit_mode' => !$this->isNew(),
                 ), array('width' => 500));

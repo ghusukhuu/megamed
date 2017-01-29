@@ -28,7 +28,7 @@
 
                             <tr>
                                 <td class="quantity"><?php echo $count ?> x</td>
-                                <td class="product"><a href="/product/<?php echo $id ?>"><?php echo $product->getName() ?></a><span class="small"><?php echo $product->getIntro() ?></span></td>
+                                <td class="product"><a href="<?php echo url_for('@product_detail?id=' . $id) ?>"><?php echo $product->getName() ?></a><span class="small"><?php echo $product->getIntro() ?></span></td>
                                 <td class="amount">₮<?php echo AppEntity::numberFormat($count * $product->getPrice()) ?></td>
                             </tr>
                         <?php endif; ?>

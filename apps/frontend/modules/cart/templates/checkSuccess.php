@@ -43,7 +43,7 @@
                                     <?php $totalAmount += $count * $product->getPrice(); ?>
 
                                     <tr class="remove-data">
-                                        <td class="product"><a href="/product/<?php echo $id ?>"><?php echo $product->getName() ?></a><span class="small"><?php echo $product->getIntro() ?></span></td>
+                                        <td class="product"><a href="#"><?php echo $product->getName() ?></a><span class="small"><?php echo $product->getIntro() ?></span></td>
                                         <td class="price">₮<?php echo AppEntity::numberFormat($product->getPrice()) ?></td>
                                         <td class="quantity">
                                             <div class="form-group">

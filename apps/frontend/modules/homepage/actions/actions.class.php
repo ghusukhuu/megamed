@@ -13,8 +13,8 @@ class homepageActions extends sfActions
 
     public function preExecute()
     {
-        $this->getUser()->setAuthenticated(true);
-        $this->getUser()->addCredential('admin');
+        //$this->getUser()->setAuthenticated(true);
+        //$this->getUser()->addCredential('admin');
     }
 
     /**
@@ -75,6 +75,8 @@ class homepageActions extends sfActions
             } catch (FacebookApiException $e) {
                 $this->user = null;
             }
+        } else {
+            $this->getUser()->signOut();
         }
     }
 
