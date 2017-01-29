@@ -1,0 +1,9 @@
+all:
+  is_secure: true
+  credentials: [admin]
+
+my:
+  is_secure: false
+
+products:
+  is_secure: false    

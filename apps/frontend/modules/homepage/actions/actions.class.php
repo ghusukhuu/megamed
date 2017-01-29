@@ -13,7 +13,8 @@ class homepageActions extends sfActions
 
     public function preExecute()
     {
-        
+        $this->getUser()->setAuthenticated(true);
+        $this->getUser()->addCredential('admin');
     }
 
     /**

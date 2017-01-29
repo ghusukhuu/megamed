@@ -1,6 +1,3 @@
-<link href="/js/facebox/facebox.css" media="screen" rel="stylesheet"/>
-<script type="text/javascript" src="/js/facebox/facebox.js"></script>
-
 <!-- page-intro start-->
 <!-- ================ -->
 <div class="page-intro">
@@ -9,7 +6,7 @@
             <div class="col-md-12">
                 <ol class="breadcrumb">
                     <li><i class="fa fa-home pr-10"></i><a href="/">Удирдлага</a></li>
-                    <li><i class="active"></i><a href="<?php echo url_for('@orders') ?>">Захиалгууд</a></li>
+                    <li><i class="active"></i><a href="<?php echo url_for('@order_my') ?>">Миний захиалгууд</a></li>
                 </ol>
             </div>
         </div>
@@ -50,11 +47,15 @@
                                     ?>
                                 </td>
                                 <td>
-                                    <select rel="<?php echo $row['id'] ?>">
-                                        <option <?php if ($row['status'] == 1) echo ' selected="selected" ' ?> value="1">new</option>
-                                        <option <?php if ($row['status'] == 2) echo ' selected="selected" ' ?> value="2">cancelled</option>
-                                        <option <?php if ($row['status'] == 3) echo ' selected="selected" ' ?> value="3">delivered</option>
-                                    </select>
+                                    <?php
+                                    if ($row['status'] == 1) {
+                                        echo '<span class="label label-warning">new</span>';
+                                    } elseif ($row['status'] == 2) {
+                                        echo '<span class="label label-success">cancelled</span>';
+                                    } elseif ($row['status'] == 3) {
+                                        echo '<span class="label label-success">delivered</span>';
+                                    }
+                                    ?>
                                 </td>
                                 <td>
                                     <a href="<?php echo url_for('@order_products?id=' . $row['id']) ?>" rel="facebox">дэлгэрэнгүй</a>
@@ -63,6 +64,7 @@
                         <?php endforeach; ?>
                     </tbody>
                 </table>
+
             </div>
         </div>
     </section>
@@ -75,18 +77,5 @@
 <script type="text/javascript">
     jQuery(document).ready(function ($) {
         $('a[rel*=facebox]').facebox();
-    });
-
-    $('select').change(function () {
-        $.ajax({
-            url: "<?php echo url_for('@order_update') ?>",
-            data: "id=" + $(this).attr('rel') + '&status=' + $(this).val(),
-            type: "POST",
-            beforeSend: function () {
-            },
-            success: function (data) {
-                console.log('updated');
-            }
-        });
     });
 </script>

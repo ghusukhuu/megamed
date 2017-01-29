@@ -34,7 +34,7 @@
                              data-speed="600"
                              data-start="1600"
                              data-end="94000"
-                             data-endspeed="600">Барааны зураг авалтын үйлчилгээ
+                             data-endspeed="600">Герман чанар
                         </div>
 
                         <!-- LAYER NR. 4 -->
@@ -54,7 +54,7 @@
                              data-speed="600"
                              data-start="1800"
                              data-end="94000"
-                             data-endspeed="600">Түр агуулахын үйлчилгээ
+                             data-endspeed="600">Герман технологи
                         </div>
 
                         <!-- LAYER NR. 6 -->
@@ -74,7 +74,7 @@
                              data-speed="600"
                              data-start="2000"
                              data-end="94000"
-                             data-endspeed="600">Цогц хүргэлтийн үйлчилгээ
+                             data-endspeed="600">Хүргэлтийн үйлчилгээ
                         </div>
 
                         <!-- LAYER NR. 8 -->

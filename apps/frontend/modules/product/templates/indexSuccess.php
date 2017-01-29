@@ -13,65 +13,71 @@
 </div>
 <!-- page-intro end -->
 
-<!-- main-container start -->
-<section class="main-container">
+<?php if (count($products)): ?>
+    <!-- main-container start -->
+    <section class="main-container">
 
-    <div class="container">
+        <div class="container">
 
-        <div class="row">
-            <!-- main start -->
-            <div class="main col-md-12">
-                <!-- shop items start -->
-                <div class="masonry-grid-fitrows row grid-space-20">
-                    <?php foreach ($products as $product): ?>
-                        <div class="col-lg-3 col-sm-6 masonry-grid-item">
-                            <div class="listing-item">
-                                <div class="overlay-container">
-                                    <img src="/images/products/megamed/<?php echo $product['photo'] ?>" alt="">
-                                    <a href="<?php echo url_for('@product_detail?id=' . $product['id']) ?>" class="overlay small">
-                                        <i class="fa fa-plus"></i>
-                                        <span>Дэлгэрэнгүй үзэх</span>
-                                    </a>
-                                </div>
+            <div class="row">
+                <!-- main start -->
+                <div class="main col-md-12">
+                    <!-- shop items start -->
+                    <div class="masonry-grid-fitrows row grid-space-20">
+                        <?php foreach ($products as $product): ?>
+                            <div class="col-lg-3 col-sm-6 masonry-grid-item">
+                                <div class="listing-item">
+                                    <div class="overlay-container">
+                                        <img src="/images/products/megamed/<?php echo $product['photo'] ?>" alt="">
+                                        <a href="<?php echo url_for('@product_detail?id=' . $product['id']) ?>" class="overlay small">
+                                            <i class="fa fa-plus"></i>
+                                            <span>Дэлгэрэнгүй үзэх</span>
+                                        </a>
+                                    </div>
 
-                                <div class="listing-item-body clearfix">
-                                    <h3 class="title">
-                                        <a href="<?php echo url_for('@product_detail?id=' . $product['id']) ?>"><?php echo $product['name'] ?></a>
-                                    </h3>
-                                    <p>
-                                        <?php echo $product['intro'] ?>
-                                    </p>
-                                    <span class="price">
-                                        ₮<?php echo AppEntity::numberFormat($product['price']); ?>
-                                    </span>
-                                    <div class="elements-list pull-right">
-                                        <a href="javascript:void(0)" class="add-to-cart" rel="<?php echo $product['id'] ?>"><i class="fa fa-shopping-cart pr-10"></i>Нэмэх</a>
+                                    <div class="listing-item-body clearfix">
+                                        <h3 class="title">
+                                            <a href="<?php echo url_for('@product_detail?id=' . $product['id']) ?>"><?php echo $product['name'] ?></a>
+                                        </h3>
+                                        <p>
+                                            <?php echo $product['intro'] ?>
+                                        </p>
+                                        <span class="price">
+                                            ₮<?php echo AppEntity::numberFormat($product['price']); ?>
+                                        </span>
+                                        <div class="elements-list pull-right">
+                                            <a href="javascript:void(0)" class="add-to-cart" rel="<?php echo $product['id'] ?>"><i class="fa fa-shopping-cart pr-10"></i>Нэмэх</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
+                    </div>
+                    <!-- shop items end -->
+
+                    <div class="clearfix"></div>
+
+                    <!-- pagination start -->
+                    <ul class="pagination">
+                        <li><a href="#">«</a></li>
+                        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>
+                    <!-- pagination end -->
+
                 </div>
-                <!-- shop items end -->
-
-                <div class="clearfix"></div>
-
-                <!-- pagination start -->
-                <ul class="pagination">
-                    <li><a href="#">«</a></li>
-                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">»</a></li>
-                </ul>
-                <!-- pagination end -->
-
+                <!-- main end -->
             </div>
-            <!-- main end -->
+
         </div>
 
+    </section>
+    <!-- main-container end -->
+<?php else: ?>
+    <div class="container">
+        <div class="alert alert-info">Бүтээгдэхүүн олдсонгүй</div>
     </div>
-
-</section>
-<!-- main-container end -->
+<?php endif; ?>
 
 <script type="text/javascript" src="/js/codex-fly.js"></script>
 <script type="text/javascript">

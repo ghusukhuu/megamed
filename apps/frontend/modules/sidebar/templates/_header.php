@@ -38,7 +38,7 @@ if ($facebook) {
                             <ul class="dropdown-menu dropdown-menu-right dropdown-animation">
                                 <li>
                                     <?php if ($sf_user->isAuthenticated()): ?>
-                                        <a href="#">
+                                        <a href="<?php echo url_for('@order_my') ?>">
                                             <i class="fa fa-list"></i> Миний захиалгууд
                                         </a>
                                         <a href="<?php echo $sf_user->getAttribute('logout', '/logout') ?>">

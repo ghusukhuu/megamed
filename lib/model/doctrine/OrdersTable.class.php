@@ -28,4 +28,16 @@ class OrdersTable extends Doctrine_Table
         return $rows;
     }
 
+    public static function getMy($userId)
+    {
+        $rows = self::getInstance()
+                ->createQuery()
+                ->where('user_id <> 0')
+                ->andWhere('user_id = ?', $userId)
+                ->orderBy('status')
+                ->fetchArray();
+
+        return $rows;
+    }
+
 }

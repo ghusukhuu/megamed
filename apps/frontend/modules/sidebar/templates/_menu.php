@@ -54,15 +54,15 @@
                                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                                     <ul class="nav navbar-nav navbar-right">
                                         <li class="dropdown">
-                                            <a href="/product" class="dropdown-toggle" data-toggle="dropdown">Бүтээгдэхүүн</a>
+                                            <a href="/product?categoryId=1" class="dropdown-toggle" data-toggle="dropdown">Бүтээгдэхүүн</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="/product">Шүд</a></li>
-                                                <li><a href="/product">Арьс гоо засал</a></li>												
-                                                <li><a href="/product">Лабортори</a></li>
-                                                <li><a href="/product">Эмэгтэйчүүд</a></li>
-                                                <li><a href="/product">Эмнэлэгийн нэг удаагийн хэрэгсэл</a></li>
-                                                <li><a href="/product">Эмч, эмнэлэгийн ажилчдын хувцас</a></li>
-                                                <li><a href="/product">Бусад</a></li>
+                                                <li><a href="/product?categoryId=1">Шүд</a></li>
+                                                <li><a href="/product?categoryId=2">Арьс гоо засал</a></li>												
+                                                <li><a href="/product?categoryId=3">Лабортори</a></li>
+                                                <li><a href="/product?categoryId=4">Эмэгтэйчүүд</a></li>
+                                                <li><a href="/product?categoryId=5">Эмнэлэгийн нэг удаагийн хэрэгсэл</a></li>
+                                                <li><a href="/product?categoryId=6">Эмч, эмнэлэгийн ажилчдын хувцас</a></li>
+                                                <li><a href="/product?categoryId=7">Бусад</a></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -76,7 +76,7 @@
                                         </li>
                                         <?php if ($sf_user->hasCredential('admin')): ?>
                                             <li class="dropdown">
-                                                <a href="/product" class="dropdown-toggle" data-toggle="dropdown">Удирдлага</a>
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Удирдлага</a>
                                                 <ul class="dropdown-menu">
                                                     <li><a href="<?php echo url_for('@orders') ?>">Захиалгууд</a></li>
                                                     <li><a href="<?php echo url_for('@manage_product') ?>">Бүтээгдэхүүн</a></li>

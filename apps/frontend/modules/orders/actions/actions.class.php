@@ -32,8 +32,13 @@ class ordersActions extends sfActions
         if ($order) {
             $order->setStatus($request->getParameter('status'));
             $order->save();
-        } 
+        }
         die();
+    }
+
+    public function executeMy(sfWebRequest $request)
+    {
+        $this->rows = OrdersTable::getMy($this->getUser()->getId());
     }
 
 }

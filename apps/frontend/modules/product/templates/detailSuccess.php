@@ -6,8 +6,8 @@
             <div class="col-md-12">
                 <ol class="breadcrumb">
                     <li><i class="fa fa-home pr-10"></i><a href="/">Нүүр</a></li>
-                    <li><i class="fa fa-gg pr-10"></i><a href="/product">Бүтээгдэхүүн</a></li>
-                    <li class="active">Megafill MH</li>
+                    <li><i class="fa fa-gg pr-10"></i><a href="/product?categoryId=<?php echo $product->getCategoryId() ?>">Бүтээгдэхүүн</a></li>
+                    <li class="active"><?php echo $product->getName() ?></li>
                 </ol>
             </div>
         </div>
@@ -28,7 +28,7 @@
 
                 <!-- page-title start -->
                 <!-- ================ -->
-                <h1 class="page-title margin-top-clear">Megafill MH CERAM</h1>
+                <h1 class="page-title margin-top-clear"><?php echo $product->getName() ?></h1>
                 <!-- page-title end -->
 
                 <div class="row">
@@ -36,7 +36,6 @@
                         <!-- Nav tabs -->
                         <ul class="nav nav-pills white space-top" role="tablist">
                             <li class="active"><a href="#product-images" role="tab" data-toggle="tab" title="images"><i class="fa fa-camera pr-5"></i> Зураг</a></li>
-                            <li><a href="#product-video" role="tab" data-toggle="tab" title="video"><i class="fa fa-video-camera pr-5"></i> Видео</a></li>
                         </ul>
 
                         <!-- Tab panes start-->
@@ -44,32 +43,16 @@
                             <div class="tab-pane active" id="product-images">
                                 <div class="owl-carousel content-slider-with-controls-bottom">
                                     <div class="overlay-container">
-                                        <img src="/images/products/megamed/megafill-mh-ceram-set.png" alt="">
-                                        <a href="/images/products/megamed/megafill-mh-ceram-set.png" class="popup-img overlay" title="image title"><i class="fa fa-search-plus"></i></a>
+                                        <img src="/images/products/megamed/<?php echo $product->getPhoto() ?>" alt="">
+                                        <a href="/images/products/megamed/<?php echo $product->getPhoto() ?>" class="popup-img overlay" title="<?php echo $product->getIntro() ?>"><i class="fa fa-search-plus"></i></a>
                                     </div>
-                                    <div class="overlay-container">
-                                        <img src="/images/products/p15.png" alt="">
-                                        <a href="/images/products/p15.png" class="popup-img overlay" title="image title"><i class="fa fa-search-plus"></i></a>
-                                    </div>
-                                    <div class="overlay-container">
-                                        <img src="/images/products/p13.jpg" alt="">
-                                        <a href="/images/products/p13.jpg" class="popup-img overlay" title="image title"><i class="fa fa-search-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="product-video">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe width="420" height="315" src="https://www.youtube.com/embed/33---0JTq0E" frameborder="0" allowfullscreen></iframe>
-                                    <p><a href="https://www.youtube.com/watch?v=33---0JTq0E">Megafill MH</a> from <a href="youtube.com">YoutTube</a>.</p>
                                 </div>
                             </div>
                         </div>
                         <!-- Tab panes end-->
                         <hr>
-                        <span class="price"><del>₮49,000</del> ₮45,000</span>
                         <div class="elements-list pull-right clearfix">
-                            <span><i class="fa fa-star text-default"></i><i class="fa fa-star text-default"></i><i class="fa fa-star text-default"></i><i class="fa fa-star text-default"></i><i class="fa fa-star"></i></span>
-                            <a href="#" class="wishlist"><i class="fa fa-heart-o pr-5"></i>Хүсэлт</a>
+                            <span class="price">₮<?php echo AppEntity::numberFormat($product->getPrice()) ?></span>
                         </div>
                         <div class="clearfix"></div>
                         <hr>
@@ -99,7 +82,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="submit" value="Сагсанд нэмэх" class="btn btn-default">
+                                    <a href="javascript:void(0)" class="btn btn-info add-to-cart" rel="<?php echo $product['id'] ?>"><i class="fa fa-shopping-cart pr-10"></i>Сагсанд нэмэх</a>
                                 </div>
                             </form>
                         </div>
@@ -117,12 +100,9 @@
                                     <!-- Tab panes -->
                                     <div class="tab-content padding-top-clear padding-bottom-clear">
                                         <div class="tab-pane fade in active" id="h2tab1">
-                                            <h4 class="title">Megafill MH CERAM</h4>
+                                            <h4 class="title"><?php echo $product->getIntro() ?></h4>
                                             <p>
-                                                Microhybrid дүүргэгчтэй гэрлээр хатуурагч материал.<br/>
-                                                Найрлаганд нь Micro-Glass оруулснаар шүдний өнгийг дагаж хувирах ба байгалийн гэрэлтсэн өнгийг үүсгэнэ.<br/> 
-                                                Өнгөлгөө сайн авна, шүлсэнд уусахгүй, зажлалтын даралт даах чанар өндөр.<br/> 
-                                                Гоо сайхныг сэргээхэд өндөр үр дүнтэй.
+                                                <?php echo $product->getDescr() ?>
                                             </p>
                                         </div>
                                     </div>
@@ -140,3 +120,30 @@
     </div>
 </section>
 <!-- main-container end -->
+
+<script type="text/javascript" src="/js/codex-fly.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.add-to-cart').on('click', function () {
+            //Select item image and pass to the function
+            var itemImg = $(this).parent().parent().parent().parent().find('img').eq(0);
+            flyToElement($(itemImg), $('.cart_anchor'));
+
+            $.ajax({
+                url: "<?php echo url_for('@cart_add') ?>",
+                data: "id=" + $(this).attr('rel'),
+                type: "POST",
+                beforeSend: function () {
+                },
+                success: function (data, textStatus, jqXHR) {
+                    //Scroll to top if cart icon is hidden on top
+                    $('html, body').animate({
+                        'scrollTop': $(".cart_anchor").position().top
+                    });
+
+                    $('#cartItems').html(data);
+                }
+            });
+        });
+    });
+</script>

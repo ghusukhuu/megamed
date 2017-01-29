@@ -1,6 +1,14 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+ship:
+  url:   /ship
+  param: { module: ship, action: index }
+
+order_my:
+  url:   /order-my
+  param: { module: orders, action: my }
+
 order_update:
   url:   /order-update
   param: { module: orders, action: update }
@@ -70,9 +78,9 @@ about:
   url:   /about
   param: { module: about, action: index }
 
-news:
-  url:   /news
-  param: { module: news, action: index }
+news_detail:
+  url:   /news/:id
+  param: { module: news, action: detail }
 
 news:
   url:   /news

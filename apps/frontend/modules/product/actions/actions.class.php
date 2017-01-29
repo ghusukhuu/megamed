@@ -18,12 +18,12 @@ class productActions extends sfActions
      */
     public function executeIndex(sfWebRequest $request)
     {
-        $this->products = ProductTable::getList();
+        $this->products = ProductTable::getList($request->getParameter('categoryId'));
     }
 
     public function executeDetail(sfWebRequest $request)
     {
-        
+        $this->product = ProductTable::getInstance()->findOneBy('id', $request->getParameter('id'));
     }
 
 }
