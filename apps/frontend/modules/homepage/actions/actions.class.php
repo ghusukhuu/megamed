@@ -75,8 +75,6 @@ class homepageActions extends sfActions
             } catch (FacebookApiException $e) {
                 $this->user = null;
             }
-        } else {
-            $this->getUser()->signOut();
         }
     }
 
