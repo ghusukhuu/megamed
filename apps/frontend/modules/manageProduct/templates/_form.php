@@ -60,21 +60,22 @@
         </div>
     </div>
 
-    <div class="space"></div>
-
-    <div class="form-group">
-        <label class="col-sm-2 control-label"></label>
-        <div class="col-sm-9">
-            <button type="button" onclick="addDetail()" class="btn btn-primary"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Нэмэлт мэдээлэл</button>
-        </div>
-    </div>
-
-    <div id="product-details-new">
-    </div>
-
     <?php $types = ProductDetailTypeTable::getForSelect(); ?>
     <?php $rows = ProductDetailTypeTable::getList(); ?>
+
     <?php if (!$form->getObject()->isNew()): ?>
+        <div class="space"></div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label"></label>
+            <div class="col-sm-9">
+                <button type="button" onclick="addDetail()" class="btn btn-primary"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Нэмэлт мэдээлэл</button>
+            </div>
+        </div>
+
+
+        <div id="product-details-new">
+        </div>
+
         <div id="product-details-old">
             <?php $productDetails = ProductDetailTable::getList($form->getObject()->getId()); ?>
             <?php foreach ($productDetails as $detail): ?>

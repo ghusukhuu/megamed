@@ -61,26 +61,23 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Тоо</label>
-                                        <input type="text" class="form-control" value="1">
+                                        <input type="text" class="form-control" value="1" id="cnt">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Өнгө</label>
-                                        <select class="form-control">
-                                            <option>A1</option>
-                                            <option>A2</option>
-                                        </select>
+
+                                <?php $rows = ProductDetailTable::getDetails($product->getId()); ?>
+                                <?php foreach ($rows as $typeId => $details): ?>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label><?php echo $details[0]['name'] ?></label>
+                                            <select class="form-control">
+                                                <?php foreach ($details as $detail): ?>
+                                                    <option value="<?php echo $detail['type_id'] ?>"><?php echo $detail['val'] ?></option>
+                                                <?php endforeach; ?>
+                                            </select>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Савлагаа</label>
-                                        <select class="form-control">
-                                            <option>4,5 гр</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                <?php endforeach; ?>
                                 <div class="col-md-12">
                                     <a href="javascript:void(0)" class="btn btn-info add-to-cart" rel="<?php echo $product['id'] ?>"><i class="fa fa-shopping-cart pr-10"></i>Сагсанд нэмэх</a>
                                 </div>
