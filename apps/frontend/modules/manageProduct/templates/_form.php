@@ -46,15 +46,10 @@
 
     <div class="form-group">
         <label class="col-sm-2 control-label">Зураг</label>
-        <div class="col-sm-4">
+        <div class="col-sm-9">
             <?php echo $form['photo']->renderError() ?>
             <?php echo $form['photo'] ?>
         </div>
-        <?php if ($form->getObject()->getPhoto()): ?>
-            <div class="col-sm-5">
-                <img src="/images/products/megamed/<?php echo $form->getObject()->getPhoto() ?>"/>
-            </div>
-        <?php endif; ?>
     </div>
 
     <div class="form-group">

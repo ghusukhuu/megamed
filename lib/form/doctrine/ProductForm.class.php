@@ -53,7 +53,7 @@ class ProductForm extends BaseProductForm
 
         $this->widgetSchema['photo'] = new sfWidgetFormInputFileEditable(array(
             'label' => 'Зураг',
-            'file_src' => sfConfig::get('sf_root_dir') . '/' . AppConstant::DIR_PRODUCT . '/images/products/megamed/' . $this->getObject()->getPhoto(),
+            'file_src' => '/images/products/megamed/' . $this->getObject()->getPhoto(),
             'is_image' => true,
             'edit_mode' => !$this->isNew(),
                 ), array('width' => 500));
