@@ -52,7 +52,7 @@ Options +FollowSymLinks +ExecCGI
   Header append Vary User-Agent
 </IfModule>
 
-<FilesMatch "(?i)^.*\.(ico|flv|jpg|jpeg|png|gif|js|css)$">
-  ExpiresActive On
-  ExpiresDefault A604800
-</FilesMatch>
+#<FilesMatch "(?i)^.*\.(ico|flv|jpg|jpeg|png|gif|js|css)$">
+#  ExpiresActive On
+#  ExpiresDefault A604800
+#</FilesMatch>

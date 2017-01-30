@@ -7,6 +7,7 @@
  */
 class ProductDetailTypeTable extends Doctrine_Table
 {
+
     /**
      * Returns an instance of this class.
      *
@@ -16,4 +17,28 @@ class ProductDetailTypeTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('ProductDetailType');
     }
+
+    public static function getList()
+    {
+        $rows = self::getInstance()
+                ->createQuery()
+                ->fetchArray();
+
+        return $rows;
+    }
+
+    public static function getForSelect()
+    {
+        $rows = self::getInstance()
+                ->createQuery()
+                ->fetchArray();
+
+        $arr = array();
+        foreach ($rows as $row) {
+            $arr[$row['id']] = $row['name'];
+        }
+
+        return $arr;
+    }
+
 }

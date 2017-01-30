@@ -7,6 +7,7 @@
  */
 class ProductDetailTable extends Doctrine_Table
 {
+
     /**
      * Returns an instance of this class.
      *
@@ -16,4 +17,15 @@ class ProductDetailTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('ProductDetail');
     }
+
+    public static function getList($productId)
+    {
+        $rows = self::getInstance()
+                ->createQuery()
+                ->where('product_id = ?', $productId)
+                ->fetchArray();
+
+        return $rows;
+    }
+
 }

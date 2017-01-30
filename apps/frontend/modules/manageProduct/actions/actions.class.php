@@ -65,6 +65,32 @@ class manageProductActions extends sfActions
         if ($form->isValid()) {
             $product = $form->save();
 
+            $detailsId = $request->getParameter('productDetailId');
+            $detailsVal = $request->getParameter('productDetailVal');
+            foreach ($detailsId as $id => $value) {
+                $obj = ProductDetailTable::getInstance()->findOneBy('id', $id);
+                $obj->setProductId($product->getId());
+                $obj->setProductDetailTypeId($value);
+                $obj->setVal($detailsVal[$id]);
+
+                if ($obj && trim($obj->getVal()) != '') {
+                    $obj->save();
+                }
+            }
+
+            $newDetailsId = $request->getParameter('newProductDetailId');
+            $newDetailsVal = $request->getParameter('newProductDetailVal');
+            foreach ($newDetailsId as $key => $detailId) {
+                $obj = new ProductDetail();
+                $obj->setProductId($product->getId());
+                $obj->setProductDetailTypeId($detailId);
+                $obj->setVal($newDetailsVal[$key]);
+
+                if (trim($obj->getVal()) != '') {
+                    $obj->save();
+                }
+            }
+
             $this->getUser()->setFlash('success', 'Амжилттай');
             $this->redirect('@manage_product_edit?id=' . $product->getId());
         }
