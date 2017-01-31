@@ -30,7 +30,7 @@ class ProductDetailTable extends Doctrine_Table
 
     public static function getDetails($productId)
     {
-        $sql = 'select p.id, t.id type_id, t.name, p.val
+        $sql = 'select p.id, t.id type_id, t.name, p.val, t.key
                 from product_detail p
                 inner join product_detail_type t on t.id = p.product_detail_type_id
                 where p.product_id = ' . (int) $productId;
@@ -44,6 +44,40 @@ class ProductDetailTable extends Doctrine_Table
         }
 
         return $arr;
+    }
+
+    public static function getDetailsBy($productId, $cart)
+    {
+        $cartItems = json_decode(json_encode($cart));
+        $types = array();
+        foreach ($cartItems as $key => $value) {
+            if (!in_array($key, array('id', 'cnt'))) {
+                $types[] = $value;
+            }
+        }
+        if (!count($types)) {
+            return '';
+        }
+
+        $where = array();
+        $where[] = 'p.product_id = ' . (int) $productId;
+        $where[] = 'p.id in (' . implode(',', $types) . ')';
+        $where = implode(' AND ', $where);
+
+        $sql = 'select p.id, t.id type_id, t.name, p.val, t.key
+                from product_detail p
+                inner join product_detail_type t on t.id = p.product_detail_type_id
+                where ' . $where;
+        
+        $pdo = Doctrine_Manager::connection()->getDbh();
+        $rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+
+        $arr = array();
+        foreach ($rows as $row) {
+            $arr[] = $row['val'];
+        }
+
+        return implode(', ', $arr);
     }
 
 }

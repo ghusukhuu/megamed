@@ -37,23 +37,29 @@
                             $totalAmount = 0;
                             ?>
 
-                            <?php foreach ($items as $id => $count): ?>
+                            <?php foreach ($items as $id => $cart): ?>
                                 <?php $product = ProductTable::getBy($id); ?>
 
                                 <?php if ($product): ?>
-                                    <?php $totalCount += $count; ?>
-                                    <?php $totalAmount += $count * $product->getPrice(); ?>
+                                    <?php $totalCount += $cart->cnt; ?>
+                                    <?php $totalAmount += $cart->cnt * $product->getPrice(); ?>
 
                                     <tr class="remove-data">
-                                        <td class="product"><a href="<?php echo url_for('@product_detail?id=' . $id) ?>"><?php echo $product->getName() ?></a><span class="small"><?php echo $product->getIntro() ?></span></td>
+                                        <td class="product">
+                                            <a href="<?php echo url_for('@product_detail?id=' . $id) ?>">
+                                                <?php echo $product->getName() ?>
+                                            </a>
+                                            <span class="small"><?php echo $product->getIntro() ?></span>
+                                            <span class="small"><?php echo ProductDetailTable::getDetailsBy($id, $cart) ?></span>
+                                        </td>
                                         <td class="price">₮<?php echo AppEntity::numberFormat($product->getPrice()) ?></td>
                                         <td class="quantity">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" name="product[<?php echo $id ?>]" value="<?php echo $count ?>">
+                                                <input type="text" class="form-control" name="product[<?php echo $id ?>]" value="<?php echo $cart->cnt ?>">
                                             </div>											
                                         </td>
                                         <td class="remove"><a class="btn btn-remove btn-default">устгах</a></td>
-                                        <td class="amount">₮<?php echo AppEntity::numberFormat($count * $product->getPrice()) ?></td>
+                                        <td class="amount">₮<?php echo AppEntity::numberFormat($cart->cnt * $product->getPrice()) ?></td>
                                     </tr>
                                 <?php endif; ?>
                             <?php endforeach; ?>

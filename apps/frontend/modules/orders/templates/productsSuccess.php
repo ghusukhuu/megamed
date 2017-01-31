@@ -5,6 +5,7 @@
             <th>Тоо</th>
             <th>Үнэ</th>
             <th>Нийт</th>
+            <th>Нэмэлт</th>
         </tr>
     </thead>
     <tbody>
@@ -14,6 +15,9 @@
                 <td><?php echo $row['quantity'] ?></td>
                 <td><?php echo $row['price'] ?></td>
                 <td><?php echo $row['amount'] ?></td>
+                <td>
+                    <?php echo OrderProductDetailsTable::getDetails($row['id']); ?>
+                </td>
             </tr>
         <?php endforeach; ?>
     </tbody>

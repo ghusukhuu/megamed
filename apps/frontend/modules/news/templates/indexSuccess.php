@@ -53,7 +53,7 @@
                                         </div>
                                         <div class="blogpost-content">
                                             <header>
-                                                <h2 class="title"><a href="blog-post.html">2017 оны АНУ-ын хамгийн өндөр цалинтай, эрэлттэй 10 мэргэжлийг шүдний эмч тэргүүллээ.</a></h2>
+                                                <h2 class="title"><a href="#">2017 оны АНУ-ын хамгийн өндөр цалинтай, эрэлттэй 10 мэргэжлийг шүдний эмч тэргүүллээ.</a></h2>
                                                 <div class="submitted"><i class="fa fa-user pr-5"></i> by <a href="#">Daria</a></div>
                                             </header>
                                             <p>

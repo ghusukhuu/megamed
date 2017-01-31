@@ -57,11 +57,11 @@
                         <div class="clearfix"></div>
                         <hr>
                         <div class="row">
-                            <form role="form">
+                            <form role="form" id="formDetails">
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Тоо</label>
-                                        <input type="text" class="form-control" value="1" id="cnt">
+                                        <input type="text" class="form-control" value="1" id="cnt" name="cnt">
                                     </div>
                                 </div>
 
@@ -70,9 +70,9 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label><?php echo $details[0]['name'] ?></label>
-                                            <select class="form-control">
+                                            <select class="form-control" name="<?php echo $details[0]['key'] ?>">
                                                 <?php foreach ($details as $detail): ?>
-                                                    <option value="<?php echo $detail['type_id'] ?>"><?php echo $detail['val'] ?></option>
+                                                    <option value="<?php echo $detail['id'] ?>"><?php echo $detail['val'] ?></option>
                                                 <?php endforeach; ?>
                                             </select>
                                         </div>
@@ -123,12 +123,23 @@
     $(document).ready(function () {
         $('.add-to-cart').on('click', function () {
             //Select item image and pass to the function
-            var itemImg = $(this).parent().parent().parent().parent().find('img').eq(0);
-            flyToElement($(itemImg), $('.cart_anchor'));
+            //var itemImg = $(this).parent().parent().parent().parent().find('img').eq(0);
+            //flyToElement($(itemImg), $('.cart_anchor'));
+
+            var $inputs = $('#formDetails :input');
+
+            // not sure if you wanted this, but I thought I'd add it.
+            // get an associative array of just the values.
+            var values = {};
+            $inputs.each(function () {
+                values[this.name] = $(this).val();
+            });
+
+            values['id'] = $(this).attr('rel');
 
             $.ajax({
                 url: "<?php echo url_for('@cart_add') ?>",
-                data: "id=" + $(this).attr('rel'),
+                data: values,
                 type: "POST",
                 beforeSend: function () {
                 },

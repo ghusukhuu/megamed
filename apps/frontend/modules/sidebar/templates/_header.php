@@ -52,22 +52,37 @@ if ($facebook) {
                                 </li>
                             </ul>
                         </div>
-                        <div id="cartItems" class="btn-group dropdown">
-                            <?php include_partial('cart/info') ?>
-                            <script type="text/javascript">
-                                $(document).ready(function () {
-                                    $.ajax({
-                                        url: "<?php echo url_for('@cart') ?>",
-                                        data: "id=" + $(this).attr('rel'),
-                                        type: "POST",
-                                        beforeSend: function () {
-                                        },
-                                        success: function (data, textStatus, jqXHR) {
-                                            $('#cartItems').html(data);
-                                        }
-                                    });
-                                });
-                            </script>
+                        <div class="btn-group dropdown">
+                            <button type="button" class="btn dropdown-toggle cart_anchor" data-toggle="dropdown">
+                                <i class="fa fa-shopping-cart"></i> 
+                                Сагс
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right dropdown-animation cart">
+                                <li>
+                                    <div id="cartItems">
+                                        <?php include_partial('cart/info') ?>
+                                        <script type="text/javascript">
+                                            $(document).ready(function () {
+                                                $.ajax({
+                                                    url: "<?php echo url_for('@cart') ?>",
+                                                    data: "id=" + $(this).attr('rel'),
+                                                    type: "POST",
+                                                    beforeSend: function () {
+                                                    },
+                                                    success: function (data, textStatus, jqXHR) {
+                                                        $('#cartItems').html(data);
+                                                    }
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+
+                                    <div class="panel-body text-right">	
+                                        <a href="<?php echo url_for('@cart_view') ?>" class="btn btn-group btn-default btn-sm">Шалгах</a>
+                                        <a href="<?php echo url_for('@cart_check') ?>" class="btn btn-group btn-default btn-sm">Тооцоо хийх</a>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
 
                     </div>

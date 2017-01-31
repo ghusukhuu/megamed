@@ -20,7 +20,7 @@ class OrderProductsTable extends Doctrine_Table
 
     public static function getList($orderId)
     {
-        $sql = 'SELECT p.name, op.quantity, op.price, op.amount
+        $sql = 'SELECT op.id, p.name, op.quantity, op.price, op.amount
                 FROM `order_products` as op
                 INNER JOIN product as p ON p.id = op.product_id
                 WHERE order_id = ' . (int) $orderId;

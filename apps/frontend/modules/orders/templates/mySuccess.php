@@ -1,3 +1,6 @@
+<link href="/js/facebox/facebox.css" media="screen" rel="stylesheet"/>
+<script type="text/javascript" src="/js/facebox/facebox.js"></script>
+
 <!-- page-intro start-->
 <!-- ================ -->
 <div class="page-intro">

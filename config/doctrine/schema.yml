@@ -20,6 +20,37 @@ Category:
       local: id
       foreign: category_id
       type: many
+OrderProductDetails:
+  connection: doctrine
+  tableName: order_product_details
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    order_product_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    product_detail_type_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    val:
+      type: string(155)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
 OrderProducts:
   connection: doctrine
   tableName: order_products
@@ -272,6 +303,13 @@ ProductDetailType:
       unsigned: false
       primary: false
       notnull: true
+      autoincrement: false
+    key:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
       autoincrement: false
 User:
   connection: doctrine

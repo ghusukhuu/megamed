@@ -89,7 +89,7 @@
 
             $.ajax({
                 url: "<?php echo url_for('@cart_add') ?>",
-                data: "id=" + $(this).attr('rel'),
+                data: "cnt=1&id=" + $(this).attr('rel'),
                 type: "POST",
                 beforeSend: function () {
                 },

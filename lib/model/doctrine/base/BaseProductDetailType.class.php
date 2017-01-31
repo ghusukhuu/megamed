@@ -9,11 +9,14 @@ Doctrine_Manager::getInstance()->bindComponent('ProductDetailType', 'doctrine');
  * 
  * @property integer $id
  * @property string $name
+ * @property string $key
  * 
  * @method integer           getId()   Returns the current record's "id" value
  * @method string            getName() Returns the current record's "name" value
+ * @method string            getKey()  Returns the current record's "key" value
  * @method ProductDetailType setId()   Sets the current record's "id" value
  * @method ProductDetailType setName() Sets the current record's "name" value
+ * @method ProductDetailType setKey()  Sets the current record's "key" value
  * 
  * @package    megamed
  * @subpackage model
@@ -41,6 +44,15 @@ abstract class BaseProductDetailType extends sfDoctrineRecord
              'notnull' => true,
              'autoincrement' => false,
              'length' => 150,
+             ));
+        $this->hasColumn('key', 'string', 50, array(
+             'type' => 'string',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             'length' => 50,
              ));
     }
 

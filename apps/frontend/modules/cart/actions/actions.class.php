@@ -14,14 +14,19 @@ class cartActions extends sfActions
     public function executeView(sfWebRequest $request)
     {
         if ($request->isMethod('post')) {
-            $items = array();
+            $items = $this->getUser()->getCartItems();
+            $new = array();
 
             $products = $request->getParameter('product');
             foreach ($products as $id => $cnt) {
-                $items[$id] = $cnt;
+                if (isset($items[$id])) {
+                    $items[$id]->cnt = $cnt;
+
+                    $new[$id] = $items[$id];
+                }
             }
 
-            $this->getUser()->setCartItems($items);
+            $this->getUser()->setCartItems($new);
         }
 
         $this->items = $this->getUser()->getCartItems();
@@ -71,19 +76,40 @@ class cartActions extends sfActions
                     $order->setAgent($_SERVER['HTTP_USER_AGENT']);
                     $order->save();
 
-                    foreach ($items as $id => $count) {
+                    foreach ($items as $id => $cart) {
                         $product = ProductTable::getBy($id);
                         if ($product) {
-                            $totalCount += $count;
-                            $totalAmount += $count * $product->getPrice();
+                            $totalCount += $cart->cnt;
+                            $totalAmount += $cart->cnt * $product->getPrice();
 
                             $orderProduct = new OrderProducts();
                             $orderProduct->setOrderId($order->getId());
                             $orderProduct->setProductId($id);
-                            $orderProduct->setQuantity($count);
+                            $orderProduct->setQuantity($cart->cnt);
                             $orderProduct->setPrice($product->getPrice());
-                            $orderProduct->setAmount($count * $product->getPrice());
+                            $orderProduct->setAmount($cart->cnt * $product->getPrice());
                             $orderProduct->save();
+
+                            $cartItems = json_decode(json_encode($cart));
+                            $types = array();
+                            foreach ($cartItems as $key => $value) {
+                                if (!in_array($key, array('id', 'cnt'))) {
+                                    $types[] = $value;
+                                }
+                            }
+                            if (count($types)) {
+                                foreach ($types as $productDetailId) {
+                                    $productDetail = ProductDetailTable::getInstance()->findOneBy('id', $productDetailId);
+
+                                    if ($productDetail) {
+                                        $orderProductDetail = new OrderProductDetails();
+                                        $orderProductDetail->setOrderProductId($orderProduct->getId());
+                                        $orderProductDetail->setProductDetailTypeId($productDetail->getProductDetailTypeId());
+                                        $orderProductDetail->setVal($productDetail->getVal());
+                                        $orderProductDetail->save();
+                                    }
+                                }
+                            }
                         }
                     }
 
@@ -100,7 +126,7 @@ class cartActions extends sfActions
                     $body .= 'Веб хуудас руу орон шалгана уу.';
                     $body .= '<br/>';
                     $body .= '<br/>';
-                    $body .= 'Хүндэтгэн ёслосон http://megamed.mn';
+                    $body .= 'Хүндэтгэсэн Technical Boss :D';
 
                     MailEntity::sentMail(MailEntity::MAIN_EMAIL, $body);
                     $this->getUser()->setCartItems(array());
@@ -123,11 +149,22 @@ class cartActions extends sfActions
 
     public function executeAdd(sfWebRequest $request)
     {
+        $params = $request->getParameterHolder()->getAll();
+        $obj = new stdClass();
+        foreach ($params as $key => $val) {
+            if (!in_array($key, array('module', 'action'))) {
+                $obj->$key = $val;
+            }
+        }
         $items = $this->getUser()->getCartItems();
 
-        $id = (int) $request->getParameter('id');
+        if (isset($items[$obj->id])) {
+            $obj->cnt += $items[$obj->id];
+            $items[$obj->id] = $obj;
+        } else {
+            $items[$obj->id] = $obj;
+        }
 
-        $items[$id] = isset($items[$id]) ? $items[$id] + 1 : 1;
         $this->getUser()->setCartItems($items);
 
         $this->items = $this->getUser()->getCartItems();

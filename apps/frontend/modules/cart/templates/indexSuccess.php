@@ -1,52 +1,39 @@
 <?php if (count($items)): ?>
-    <button type="button" class="btn dropdown-toggle cart_anchor" data-toggle="dropdown">
-        <i class="fa fa-shopping-cart"></i> 
-        Сагс (<?php echo count($items) ?>)
-    </button>
-    <ul class="dropdown-menu dropdown-menu-right dropdown-animation cart">
-        <li>
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th class="quantity">Тоо</th>
-                        <th class="product">Бараа</th>
-                        <th class="amount">Нийт</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    $totalCount = 0;
-                    $totalAmount = 0;
-                    ?>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th class="quantity">Тоо</th>
+                <th class="product">Бараа</th>
+                <th class="amount">Нийт</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            $totalCount = 0;
+            $totalAmount = 0;
+            ?>
 
-                    <?php foreach ($items as $id => $count): ?>
-                        <?php $product = ProductTable::getBy($id); ?>
+            <?php foreach ($items as $id => $cart): ?>
+                <?php $product = ProductTable::getBy($id); ?>
 
-                        <?php if ($product): ?>
-                            <?php $totalCount += $count; ?>
-                            <?php $totalAmount += $count * $product->getPrice(); ?>
-
-                            <tr>
-                                <td class="quantity"><?php echo $count ?> x</td>
-                                <td class="product"><a href="<?php echo url_for('@product_detail?id=' . $id) ?>"><?php echo $product->getName() ?></a><span class="small"><?php echo $product->getIntro() ?></span></td>
-                                <td class="amount">₮<?php echo AppEntity::numberFormat($count * $product->getPrice()) ?></td>
-                            </tr>
-                        <?php endif; ?>
-                    <?php endforeach; ?>
+                <?php if ($product): ?>
+                    <?php $totalCount += $cart->cnt; ?>
+                    <?php $totalAmount += $cart->cnt * $product->getPrice(); ?>
 
                     <tr>
-                        <td class="total-quantity" colspan="2">Нийт: <?php echo $totalCount ?></td>
-                        <td class="total-amount">₮<?php echo AppEntity::numberFormat($totalAmount) ?></td>
+                        <td class="quantity"><?php echo $cart->cnt ?> x</td>
+                        <td class="product"><a href="<?php echo url_for('@product_detail?id=' . $id) ?>"><?php echo $product->getName() ?></a><span class="small"><?php echo $product->getIntro() ?></span></td>
+                        <td class="amount">₮<?php echo AppEntity::numberFormat($cart->cnt * $product->getPrice()) ?></td>
                     </tr>
-                </tbody>
-            </table>
+                <?php endif; ?>
+            <?php endforeach; ?>
 
-            <div class="panel-body text-right">	
-                <a href="<?php echo url_for('@cart_view') ?>" class="btn btn-group btn-default btn-sm">Шалгах</a>
-                <a href="<?php echo url_for('@cart_check') ?>" class="btn btn-group btn-default btn-sm">Тооцоо хийх</a>
-            </div>
-        </li>
-    </ul>
+            <tr>
+                <td class="total-quantity" colspan="2">Нийт: <?php echo $totalCount ?></td>
+                <td class="total-amount">₮<?php echo AppEntity::numberFormat($totalAmount) ?></td>
+            </tr>
+        </tbody>
+    </table>
 <?php else: ?>
     <?php include_partial('cart/info') ?>
 <?php endif; ?>
