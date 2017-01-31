@@ -7,7 +7,7 @@ default:
 
   metas:
     title:        Мегамед ХХК
-    description:  MegaMed
+    description:  Герман улсын "Megafill" шүдний ломбоны материалыг албан ёсны эрхтэйгээр борлуулж байна
     keywords:     megamed, dental
     language:     en
     robots:       index, follow
