@@ -13,25 +13,25 @@
         <link rel="icon" href="/images/favicon.ico"/>
 
         <!-- Bootstrap core CSS -->
-        <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="http://static.megamed.mn/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 
         <!-- Font Awesome CSS -->
-        <link href="/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="http://static.megamed.mn/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
 
         <!-- Fontello CSS -->
-        <link href="/fonts/fontello/css/fontello.css" rel="stylesheet"/>
+        <link href="http://static.megamed.mn/fonts/fontello/css/fontello.css" rel="stylesheet"/>
 
         <!-- Plugins -->
-        <link href="/plugins/rs-plugin/css/settings.css" media="screen" rel="stylesheet"/>
-        <link href="/plugins/rs-plugin/css/extralayers.css" media="screen" rel="stylesheet"/>
-        <link href="/plugins/magnific-popup/magnific-popup.css" rel="stylesheet"/>
+        <link href="http://static.megamed.mn/plugins/rs-plugin/css/settings.css" media="screen" rel="stylesheet"/>
+        <link href="http://static.megamed.mn/plugins/rs-plugin/css/extralayers.css" media="screen" rel="stylesheet"/>
+        <link href="http://static.megamed.mn/plugins/magnific-popup/magnific-popup.css" rel="stylesheet"/>
         <link href="/css/animations.css" rel="stylesheet"/>
-        <link href="/plugins/owl-carousel/owl.carousel.css" rel="stylesheet"/>
+        <link href="http://static.megamed.mn/plugins/owl-carousel/owl.carousel.css" rel="stylesheet"/>
 
         <?php include_stylesheets() ?>
         <?php include_javascripts() ?>
 
-        <script type="text/javascript" src="/plugins/jquery.min.js"></script>
+        <script type="text/javascript" src="http://static.megamed.mn/plugins/jquery.min.js"></script>
     </head>
     <body>
         <!-- scrollToTop -->
@@ -55,39 +55,39 @@
 
         <!-- JavaScript files placed at the end of the document so the pages load faster ================================================== -->
         <!-- Jquery and Bootstap core js files -->
-        <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://static.megamed.mn/bootstrap/js/bootstrap.min.js"></script>
 
         <!-- Modernizr javascript -->
-        <script type="text/javascript" src="/plugins/modernizr.js"></script>
+        <script type="text/javascript" src="http://static.megamed.mn/plugins/modernizr.js"></script>
 
         <!-- jQuery REVOLUTION Slider  -->
-        <script type="text/javascript" src="/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-        <script type="text/javascript" src="/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+        <script type="text/javascript" src="http://static.megamed.mn/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="http://static.megamed.mn/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
         <!-- Isotope javascript -->
-        <script type="text/javascript" src="/plugins/isotope/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="http://static.megamed.mn/plugins/isotope/isotope.pkgd.min.js"></script>
 
         <!-- Owl carousel javascript -->
-        <script type="text/javascript" src="/plugins/owl-carousel/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="http://static.megamed.mn/plugins/owl-carousel/owl.carousel.min.js"></script>
 
         <!-- Magnific Popup javascript -->
-        <script type="text/javascript" src="/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="http://static.megamed.mn/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 
         <!-- Appear javascript -->
-        <script type="text/javascript" src="/plugins/jquery.appear.js"></script>
+        <script type="text/javascript" src="http://static.megamed.mn/plugins/jquery.appear.js"></script>
 
         <!-- Count To javascript -->
-        <script type="text/javascript" src="/plugins/jquery.countTo.js"></script>
+        <script type="text/javascript" src="http://static.megamed.mn/plugins/jquery.countTo.js"></script>
 
         <!-- Parallax javascript -->
-        <script src="/plugins/jquery.parallax-1.1.3.js"></script>
+        <script src="http://static.megamed.mn/plugins/jquery.parallax-1.1.3.js"></script>
 
         <!-- Contact form -->
-        <script src="/plugins/jquery.validate.js"></script>
+        <script src="http://static.megamed.mn/plugins/jquery.validate.js"></script>
 
         <!-- SmoothScroll javascript -->
-        <script type="text/javascript" src="/plugins/jquery.browser.js"></script>
-        <script type="text/javascript" src="/plugins/SmoothScroll.min.js"></script>
+        <script type="text/javascript" src="http://static.megamed.mn/plugins/jquery.browser.js"></script>
+        <script type="text/javascript" src="http://static.megamed.mn/plugins/SmoothScroll.min.js"></script>
 
         <!-- Initialization of Plugins -->
         <script type="text/javascript" src="/js/template.js"></script>
