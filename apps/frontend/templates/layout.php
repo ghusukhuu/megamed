@@ -13,10 +13,10 @@
         <link rel="icon" href="/images/favicon.ico"/>
 
         <!-- Bootstrap core CSS -->
-        <link href="/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+        <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 
         <!-- Font Awesome CSS -->
-        <link href="/fonts/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+        <link href="/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
 
         <!-- Fontello CSS -->
         <link href="/fonts/fontello/css/fontello.css" rel="stylesheet"/>
@@ -32,39 +32,6 @@
         <?php include_javascripts() ?>
 
         <script type="text/javascript" src="/plugins/jquery.min.js"></script>
-
-        <?php if ($_SERVER['REMOTE_ADDR'] != '127.0.0.1'): ?>
-            <!-- Google Analytics -->
-            <script>
-                (function (i, s, o, g, r, a, m) {
-                    i['GoogleAnalyticsObject'] = r;
-                    i[r] = i[r] || function () {
-                        (i[r].q = i[r].q || []).push(arguments)
-                    }, i[r].l = 1 * new Date();
-                    a = s.createElement(o),
-                            m = s.getElementsByTagName(o)[0];
-                    a.async = 1;
-                    a.src = g;
-                    m.parentNode.insertBefore(a, m)
-                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-                ga('create', 'UA-82807299-1', 'auto');
-                ga('send', 'pageview');
-            </script>
-        <?php endif; ?>
-
-        <script type="application/ld+json">
-            {
-            "@context": "http://schema.org",
-            "@type": "WebSite",
-            "url": "http://www.megamed.mn/",
-            "potentialAction": {
-            "@type": "SearchAction",
-            "target": "http://www.megamed.mn/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-            }
-            }
-        </script>
     </head>
     <body>
         <!-- scrollToTop -->
@@ -127,5 +94,38 @@
 
         <!-- Custom Scripts -->
         <script type="text/javascript" src="/js/custom.js"></script>
+
+        <?php if ($_SERVER['REMOTE_ADDR'] != '127.0.0.1'): ?>
+            <!-- Google Analytics -->
+            <script>
+                (function (i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r;
+                    i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+                    a = s.createElement(o),
+                            m = s.getElementsByTagName(o)[0];
+                    a.async = 1;
+                    a.src = g;
+                    m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+                ga('create', 'UA-82807299-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+
+            <script type="application/ld+json">
+                {
+                "@context": "http://schema.org",
+                "@type": "WebSite",
+                "url": "http://www.megamed.mn/",
+                "potentialAction": {
+                "@type": "SearchAction",
+                "target": "http://www.megamed.mn/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+                }
+                }
+            </script>
+        <?php endif; ?>
     </body>
 </html>
