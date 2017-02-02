@@ -68,7 +68,7 @@
         <script type="text/javascript" src="/plugins/isotope/isotope.pkgd.min.js"></script>
 
         <!-- Owl carousel javascript -->
-        <script type="text/javascript" src="/plugins/owl-carousel/owl.carousel.js"></script>
+        <script type="text/javascript" src="/plugins/owl-carousel/owl.carousel.min.js"></script>
 
         <!-- Magnific Popup javascript -->
         <script type="text/javascript" src="/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
@@ -87,7 +87,7 @@
 
         <!-- SmoothScroll javascript -->
         <script type="text/javascript" src="/plugins/jquery.browser.js"></script>
-        <script type="text/javascript" src="/plugins/SmoothScroll.js"></script>
+        <script type="text/javascript" src="/plugins/SmoothScroll.min.js"></script>
 
         <!-- Initialization of Plugins -->
         <script type="text/javascript" src="/js/template.js"></script>
