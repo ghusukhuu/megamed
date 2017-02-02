@@ -16,10 +16,10 @@
         <link href="http://static.megamed.mn/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 
         <!-- Font Awesome CSS -->
-        <link href="http://static.megamed.mn/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
 
         <!-- Fontello CSS -->
-        <link href="http://static.megamed.mn/fonts/fontello/css/fontello.css" rel="stylesheet"/>
+        <link href="/fonts/fontello/css/fontello.css" rel="stylesheet"/>
 
         <!-- Plugins -->
         <link href="http://static.megamed.mn/plugins/rs-plugin/css/settings.css" media="screen" rel="stylesheet"/>
