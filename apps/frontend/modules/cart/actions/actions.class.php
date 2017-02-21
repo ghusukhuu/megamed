@@ -74,6 +74,7 @@ class cartActions extends sfActions
                     $order->setPaymentType($paymentType);
                     $order->setIp($request->getRemoteAddress());
                     $order->setAgent($_SERVER['HTTP_USER_AGENT']);
+                    $order->setCreatedAt(date('Y-m-d H:i:s'));
                     $order->save();
 
                     foreach ($items as $id => $cart) {
